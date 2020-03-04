@@ -154,9 +154,31 @@
 // var a = process.argv[2];
 // var b = process.argv[3];
 // var c = process.argv[4];
-// if(((a!=b)&&(a!=c))&&b==c) {console.log(a)
+// if(((a!=b)&&(a!=c))&&b==c) {console.log(1)
 // return 0;}
-// if(((b!=a)&&(b!=c))&&a==c) {console.log(b)
+// if(((b!=a)&&(b!=c))&&a==c) {console.log(2)
 // return 0;}
-// if((c!=b)&&(c!=a)&&b==a) console.log(c)
+// if((c!=b)&&(c!=a)&&b==a) console.log(3)
 //#19
+// var a = process.argv[2];
+// var b = process.argv[3];
+// var c = process.argv[4];
+// var d = process.argv[5];
+// if(((a!=b)&&(a!=c)&&(a!=d))&&b==c==d) {console.log(1)
+// return 0;}
+// if(((b!=a)&&(b!=c)&&(b!=d))&&a==c==d) {console.log(2)
+// return 0;}
+// if(((c!=b)&&(c!=a)&&(c!=d))&&b==a==d){ console.log(3)
+// return 0;}
+// if(((d!=a)&&(d!=b)&&(d!=c))&&b==a==c) console.log(4)
+//#20
+// var a = process.argv[2];
+// var b = process.argv[3];
+// var c = process.argv[4];
+// if((a-b)<(a-c)) console.log(b);
+// if((a-b)>(a-c)) console.log(c);
+//#28
+// var a = process.argv[2];
+// a = parseInt(a);
+// if((a%4)==0)
+// console.log("yes")
