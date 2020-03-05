@@ -175,8 +175,8 @@
 // var a = process.argv[2];
 // var b = process.argv[3];
 // var c = process.argv[4];
-// if((a-b)<(a-c)) console.log(b);
-// if((a-b)>(a-c)) console.log(c);
+// if((a-b)<=(a-c)) console.log(b);
+// if((a-b)>=(a-c)) console.log(c);
 //#28
 // var a = process.argv[2];
 // a = parseInt(a);
