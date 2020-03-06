@@ -283,4 +283,3 @@
 //       }
 //       console.log(summa)
 //   }
-//#31
