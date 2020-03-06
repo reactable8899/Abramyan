@@ -284,5 +284,3 @@
 //       console.log(summa)
 //   }
 //#31
-var n = process.argv[2];
-n = parseInt(n);
