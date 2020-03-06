@@ -203,3 +203,86 @@
 // s+=x/t;
 //   console.log(s)
 // }
+//#23
+// var x = process.argv[2];
+// x = parseInt(x);
+// var n = process.argv[3];
+// n = parseInt(n);
+// var znak = 1;
+// var pow = 1;
+// var factorial = 1;
+// var sum = 0;
+// for(var i = 1;i<=2*n+1;i+=2){
+//   //console.log(i)
+//   for(var j = 2;j<=i;j++){
+//     factorial*=j;
+//   }
+//   for(j = 1;j<=i;j++){
+//     pow*=x;
+//   }
+//   sum+=znak*pow/factorial;
+//   console.log(sum)
+//   znak *=-1;
+// }
+//#24
+// var x = process.argv[2];
+// x = parseInt(x);
+// var n = process.argv[3];
+// n = parseInt(n);
+// var znak = 1;
+// var pow = 1;
+// var factorial = 1;
+// var sum = 0;
+// for(var i = 0;i<=2*n;i+=2){
+//   //console.log(i)
+//   for(var j = 1;j<=i;j++){
+//     factorial*=j;
+//   }
+//   for(j = 1;j<=i;j++){
+//     pow*=x;
+//   }
+//   sum+=(znak*pow/factorial);
+//   console.log(sum)
+//   znak *=-1;
+// }
+//#25
+// var x = process.argv[2];
+// x = parseInt(x);
+// var n = process.argv[3];
+// n = parseInt(n);
+// var znak = 1;
+// var pow = 1;
+// var summa = 0;
+// var sum = 0;
+// for(var i = 1;i<=n;i++){
+//   pow*=x;
+//   sum++;
+//   summa += znak*pow/sum;
+//   znak*=-1;
+//   console.log(summa)
+// }
+//#26
+// var x = process.argv[2];
+// x = parseInt(x);
+// var n = process.argv[3];
+// n = parseInt(n);
+// var sum = 0;
+// var power = 0;
+// var pow = 1;
+// var znak = 1;
+// var summa = 0;
+// for(var i = 1;i<=n;i++){
+//     pow*=x;
+//       if((i%2)==1){
+//           power = pow;
+//           //console.log(power)
+//           sum = i;
+//           //console.log(sum)
+//           summa += znak*power/sum;
+//           znak *=-1;
+//       }
+//       console.log(summa)
+//   }
+//#31
+var n = process.argv[2];
+n = parseInt(n);
