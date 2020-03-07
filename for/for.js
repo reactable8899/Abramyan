@@ -386,3 +386,17 @@
 //   s = 1;
 //  console.log(sum)
 // }
+//#38
+// var n = process.argv[2];
+// n = parseInt(n);
+// var s = 1;
+// var sum = 0;
+// for(var i = 1;i<=n;i++){
+//     for(var j = i;j<=n;j++){
+//       s*=i;
+//       //console.log(s)
+//   }
+//   sum +=s;
+//   s = 1;
+//  console.log(sum)
+// }
