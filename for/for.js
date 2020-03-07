@@ -357,18 +357,32 @@
 // }
 
 //#36
-var n = process.argv[2];
-n = parseInt(n);
-var k = process.argv[3];
-k = parseInt(k);
-var s = 1;
-var sum = 0;
-for(var i = 1;i<=n;i++){
-    for(var j = 1;j<=k;j++){
-      s*=i;
-      //console.log(s)
-  }
-  sum +=s;
-  s = 1;
- console.log(sum)
-}
+// var n = process.argv[2];
+// n = parseInt(n);
+// var k = process.argv[3];
+// k = parseInt(k);
+// var s = 1;
+// var sum = 0;
+// for(var i = 1;i<=n;i++){
+//     for(var j = 1;j<=k;j++){
+//       s*=i;
+//       //console.log(s)
+//   }
+//   sum +=s;
+//   s = 1;
+//  console.log(sum)
+// }
+//#37
+// var n = process.argv[2];
+// n = parseInt(n);
+// var s = 1;
+// var sum = 0;
+// for(var i = 1;i<=n;i++){
+//     for(var j = 1;j<=i;j++){
+//       s*=i;
+//       //console.log(s)
+//   }
+//   sum +=s;
+//   s = 1;
+//  console.log(sum)
+// }
