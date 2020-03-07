@@ -283,3 +283,92 @@
 //       }
 //       console.log(summa)
 //   }
+//#31
+// var a = process.argv[2];
+// a = parseInt(a);
+// var x=0;
+// var a0 = 2;
+// var s = 0;
+// for(var i = 1;i<=a;i++){
+//   x=2+1/a0;
+//   s=x;
+//   a0 = x;
+//   console.log(s)
+// }
+
+//#32
+// var a = process.argv[2];
+// a = parseInt(a);
+// var x=0;
+// var a0 = 1;
+// var s = 0;
+// for(var i = 1;i<=a;i++){
+//   x = (1+a0)/i;
+//   s=x;
+//   a0 = x;
+//   console.log(s)
+// }
+
+//#33
+// var a = process.argv[2];
+// a = parseInt(a);
+// var x=0;
+// var f1 = 1;
+// var f2 = 0;
+// var s = 0;
+// for(var i = 1;i<=a;i++){
+//   x = f1 + f2;
+//   s = x;
+//   f1 = f2;
+//   f2 = x;
+//   console.log(s)
+// }
+
+//#34
+// var a = process.argv[2];
+// a = parseInt(a);
+// var x=0;
+// var a1 = 1;
+// var a2 = 2;
+// var s = 0;
+// for(var i = 3;i<=a;i++){
+//     x = (a1 + (2*a2))/3;
+//     s = x;
+//     a1 = a2;
+//     a2 = x;
+//   console.log(s)
+// }
+
+//#35
+// var a = process.argv[2];
+// a = parseInt(a);
+// var x=0;
+// var a1 = 1;
+// var a2 = 2;
+// var a3 = 3;
+// var s = 0;
+// for(var i = 4;i<=a;i++){
+//     x = (a3 + a2 -(2*a1));
+//     s = x;
+//     a1 = a2;
+//     a2 = a3;
+//     a3 = x;
+//   console.log(s)
+// }
+
+//#36
+var n = process.argv[2];
+n = parseInt(n);
+var k = process.argv[3];
+k = parseInt(k);
+var s = 1;
+var sum = 0;
+for(var i = 1;i<=n;i++){
+    for(var j = 1;j<=k;j++){
+      s*=i;
+      //console.log(s)
+  }
+  sum +=s;
+  s = 1;
+ console.log(sum)
+}
