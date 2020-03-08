@@ -288,12 +288,10 @@
 // a = parseInt(a);
 // var x=0;
 // var a0 = 2;
-// var s = 0;
 // for(var i = 1;i<=a;i++){
 //   x=2+1/a0;
-//   s=x;
 //   a0 = x;
-//   console.log(s)
+//   console.log(a0)
 // }
 
 //#32
@@ -303,10 +301,8 @@
 // var a0 = 1;
 // var s = 0;
 // for(var i = 1;i<=a;i++){
-//   x = (1+a0)/i;
-//   s=x;
-//   a0 = x;
-//   console.log(s)
+//   a0 = (1+a0)/i;
+//   console.log(a0)
 // }
 
 //#33
@@ -315,13 +311,11 @@
 // var x=0;
 // var f1 = 1;
 // var f2 = 0;
-// var s = 0;
 // for(var i = 1;i<=a;i++){
 //   x = f1 + f2;
-//   s = x;
 //   f1 = f2;
 //   f2 = x;
-//   console.log(s)
+//   console.log(x)
 // }
 
 //#34
@@ -330,13 +324,11 @@
 // var x=0;
 // var a1 = 1;
 // var a2 = 2;
-// var s = 0;
 // for(var i = 3;i<=a;i++){
 //     x = (a1 + (2*a2))/3;
-//     s = x;
 //     a1 = a2;
 //     a2 = x;
-//   console.log(s)
+//   console.log(x)
 // }
 
 //#35
@@ -346,14 +338,12 @@
 // var a1 = 1;
 // var a2 = 2;
 // var a3 = 3;
-// var s = 0;
 // for(var i = 4;i<=a;i++){
 //     x = (a3 + a2 -(2*a1));
-//     s = x;
 //     a1 = a2;
 //     a2 = a3;
 //     a3 = x;
-//   console.log(s)
+//   console.log(x)
 // }
 
 //#36
@@ -364,12 +354,11 @@
 // var s = 1;
 // var sum = 0;
 // for(var i = 1;i<=n;i++){
+//   s = 1;
 //     for(var j = 1;j<=k;j++){
 //       s*=i;
-//       //console.log(s)
 //   }
 //   sum +=s;
-//   s = 1;
 //  console.log(sum)
 // }
 //#37
@@ -378,12 +367,11 @@
 // var s = 1;
 // var sum = 0;
 // for(var i = 1;i<=n;i++){
+//   s = 1;
 //     for(var j = 1;j<=i;j++){
 //       s*=i;
-//       //console.log(s)
 //   }
 //   sum +=s;
-//   s = 1;
 //  console.log(sum)
 // }
 //#38
@@ -392,11 +380,10 @@
 // var s = 1;
 // var sum = 0;
 // for(var i = 1;i<=n;i++){
+//   s = 1;
 //     for(var j = i;j<=n;j++){
 //       s*=i;
-//       //console.log(s)
 //   }
 //   sum +=s;
-//   s = 1;
 //  console.log(sum)
 // }
