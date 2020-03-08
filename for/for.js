@@ -387,3 +387,28 @@
 //   sum +=s;
 //  console.log(sum)
 // }
+//#39
+// var a = process.argv[2];
+// a = parseInt(a);
+// var b = process.argv[3];
+// b = parseInt(b);
+// var x = 1;
+// for(var i = a;i<=b;i++){
+//   x = 1;
+//   for(var j = 1;j<=i;j++){
+//       x*=i;
+//   }
+//   console.log(x)
+// }
+//#40
+// var a = process.argv[2];
+// a = parseInt(a);
+// var b = process.argv[3];
+// b = parseInt(b);
+// var x;
+// for(var i = a;i<=b;i++){
+//   for(var j = 1;j<=i;j++)
+//   {
+//       console.log(i)
+//   }
+// }
