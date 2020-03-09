@@ -6,7 +6,7 @@
 // b = parseInt(b);
 // var temp = a;
 // while(temp >= 0){
-//   temp-=b;
+//   temp -= b;
 // }
 // console.log(temp+b)
 
@@ -18,7 +18,7 @@
 // var temp = a;
 // var i = 0;
 // while(temp >= 0){
-//   temp-=b;
+//   temp -= b;
 //   i++;
 // }
 // console.log(i-1)
@@ -32,7 +32,7 @@
 // var i = 0;
 // var s = 0;
 // while(temp >= 0){
-//   temp-=b;
+//   temp -= b;
 //   i++;
 //   s += b;
 // }
@@ -55,7 +55,7 @@
 // }
 // }
 // for(var i = 1; i<=s;i++)
-// n*=3;
+// n *= 3;
 // if(n == temp){
 // console.log("true")
 // } else {
@@ -70,7 +70,7 @@
 // while(a > 2){
 //   temp=a/2;
 //   s++;
-//   a-=temp;
+//   a -= temp;
 //   //console.log(s)
 // }
 // console.log(s)
@@ -99,7 +99,7 @@
 // var s = 1;
 // var k = 0;
 // while(a > s){
-//   s*=3;
+//   s *= 3;
 //   k++;
 // }
 // console.log(k)
@@ -110,7 +110,7 @@
 // var s = 1;
 // var k = 0;
 // while(a > s){
-//   s*=3;
+//   s *= 3;
 //   k++;
 // }
 // console.log(k-1)
@@ -121,7 +121,7 @@
 // var s = 0;
 // var n = 1;
 // while(a > s){
-//   s+=n;
+//   s += n;
 //   n++;
 //   console.log(s + " " + (n-1))
 // }
@@ -133,7 +133,7 @@
 // var n = 1;
 // while(s <= a){
 //   console.log(s)
-//   s+=n;
+//   s += n;
 //   n++;
 // }
 
