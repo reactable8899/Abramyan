@@ -76,28 +76,108 @@
 // var a = process.argv[2];
 // a = parseInt(a);
 // var s = 1;
-// var n = 1;
-// while(a>s){
-//     s = n*n;
-//     n++;
-//   }
-//   console.log(n-1)
+// while(a>s*s){
+//   s++;
+// }
+// console.log(s)
 //#8
 // var a = process.argv[2];
 // a = parseInt(a);
 // var s = 1;
+// while(a>s*s){
+//   s++;
+//   console.log(s-1)
+// }
+//#9
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var k = 0;
+// while(a>s){
+//   s*=3;
+//   k++;
+// }
+// console.log(k)
+//#10
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var k = 0;
+// while(a>s){
+//   s*=3;
+//   k++;
+// }
+// console.log(k-1)
+//#11
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
 // var n = 1;
 // while(a>s){
-//     s = n*n;
-//     n++;
-//   }
-//   console.log(n-2)
-//#9
-var a = process.argv[2];
-a = parseInt(a);
-var s = 1;
-var n = 1;
-while(a>s){
-    
-
-}
+//   s+=n;
+//   n++;
+//   console.log(s + " " + (n-1))
+// }
+//#12
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
+// var n = 1;
+// while(s<=a){
+//   console.log(s)
+//   s+=n;
+//   n++;
+// }
+//#13
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
+// var n = 1;
+// while(s<a){
+//   s+=1/n;
+//   n++;
+//   console.log(s)
+// }
+//#14
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
+// var n = 1;
+// while(s<=a){
+//   console.log(s + " " + n)
+//   s+=1/n;
+//   n++;
+// }
+//#15
+// var a = process.argv[2];
+// a = parseInt(a);
+// var n = 1000;
+// var month = 0;
+// while(n<1100){
+//   n+=n*a/100;
+//   month++;
+//   console.log(n + " " + month)
+// }
+//#16
+// var a = process.argv[2];
+// a = parseInt(a);
+// var n = 10;
+// var days = 1;
+// while(n<200){
+//   console.log(n+ " "+ days)
+//   n+=10+n*a/100;
+//   days++;
+// }
+//#17
+// var a = process.argv[2];
+// a = parseInt(a);
+// var n = a;
+// while(a!=a%10){
+//   a = a%10;
+//   b = n%100;
+//   c = b/10;
+//   d = n/100;
+//   d = parseInt(d)
+//   c = parseInt(c)
+//   console.log(a + " " + " " + c + " "+d)
+// }
