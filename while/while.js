@@ -184,24 +184,144 @@
 // var a = process.argv[2];
 // a = parseInt(a);
 // var n = a;
-// while ( a != a % 10 ) {
-//   a = a % 10;
-//   b = n % 100;
-//   c = b / 10;
-//   d = n / 100;
-//   d = parseInt(d)
-//   c = parseInt(c)
-//   console.log(a + " " + c + " "+d)
+// var b = a;
+// while ( a > 1 ) {
+//   console.log(a%10)
+//   a = parseInt(a/=10);
 // }
-//
-// #22
+
+//#18
 // var a = process.argv[2];
 // a = parseInt(a);
-// var s;
-// if ( ( a % 2 ) ==1 ) {
-//   if ( ( a % 3 ) == 2 || ( a%3 ) == 1)
+// var s = 0;
+// var n = 0;
+// while ( a > 0 ) {
+//   console.log( a % 10 )
+//   s += a % 10;
+//   a = parseInt(a /= 10);
+//   n++
+// }
+// console.log(s + " kol: "+ n)
+
+//20
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
+// var n = 0;
+// while ( a > 0 ) {
+//   s += a % 10;
+//   if ( ( a % 10) == 2) {
+//     console.log("true")
+//     return 0;
+//   }
+//   a = parseInt(a /= 10);
+//   n++;
+// }
+// if ( n > 0 ) {
+// console.log("false")
+// }
+
+//#21
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 0;
+// var n = 0;
+// while ( a > 0 ) {
+//   s += a % 10;
+//   if ( ( a % 2 ) == 1) {
+//     console.log("true")
+//     return 0;
+//   }
+//   a = parseInt(a /= 10);
+//   n++;
+// }
+// if ( n > 0 ) {
+// console.log("false")
+// }
+
+//#22
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var i = 2;
+// while ( i < a ) {
+//   if( ( a % i ) === 0 ) {
+//     s = 0;
+//     break;
+//   }
+//   i++;
+// }
+// if ( s === 1 ) {
+//   console.log("prostoe")
+// } else {
+//   console.log("zolotoe")
+// }
+
+//#24
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var i = 1;
+// var i2 = 1;
+// while ( i < a ) {
+//   i += i2;
+//   i2 = s;
+//   s = i;
+//   console.log(i)
+// }
+// if ( a == i) {
 //   console.log("true")
 // } else {
-//   if ( ( a % 3 ) == 2)
-//   console.log("true")
+//   console.log("false")
 // }
+
+//#25
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var i = 1;
+// var i2 = 1;
+// while ( i <= a ) {
+//   i += i2;
+//   i2 = s;
+//   s = i;
+//   console.log(i)
+// }
+
+//#27
+// var a = process.argv[2];
+// a = parseInt(a);
+// var s = 1;
+// var i = 1;
+// var i2 = 0;
+// var n = 0;
+// while ( i != a ) {
+//   i += i2;
+//   i2 = s;
+//   s = i;
+//   n++;
+//   //console.log(i)
+//   if ( n > a ) {
+//     console.log("не является числом Фибоначчи");
+//     return 0;
+//   }
+// }
+// console.log(n+1)
+
+//#30
+// var a = process.argv[2];
+// a = parseInt(a);
+// var b = process.argv[3];
+// b = parseInt(b);
+// var c = process.argv[4];
+// c = parseInt(c);
+// var n = a*b;
+// var s = 0;
+// while ( n > 0 ){
+//   n = parseInt(n - c * c);
+//   s++;
+//   if ( n < 0 ) {
+//     s -= 1;
+//   }
+// }
+// console.log(s)
