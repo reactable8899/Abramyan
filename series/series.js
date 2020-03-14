@@ -526,15 +526,68 @@
 // let count = 0;
 // var s = 0;
 // rl.on('line', line => {
-//   s = line;
-//   for (var i = 0; i < n; i++){
-//     for (var j = 0; j < i; j++){
-//       line *= s;
-//       console.log(line)
-//     }
-//   }
 //   count++;
+//   s = line;
+//   for (var i = 1; i < count ; i++){
+//     line *= s;
+//     console.log(line)
+//   }
 //   if (n === count) {
 //     rl.close();
 //   }
 // })
+
+//#28
+// const readline = require('readline');
+// let n = process.argv[2];
+// n = parseInt(n);
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// let count = 0;
+// var s = 0;
+// var t = n;
+// rl.on('line', line => {
+//   count++;
+//   s = line;
+//   for (var i = 1; i < t ; i++) {
+//     line *= s;
+//     console.log(line)
+//   }
+//   t--;
+//   if (n === count) {
+//     rl.close();
+//   }
+// })
+
+//#29
+// const readline = require('readline');
+// let n = process.argv[2];
+// n = parseInt(n);
+// let k = process.argv[3];
+// k = parseInt(k);
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// let count = 0;
+// var s = 0;
+// var sum = 0;
+//
+//
+//   rl.on('line', line => {
+//     line = parseInt(line)
+//     count++;
+//     console.log(line)
+//     if (s!=n) {
+//       sum += line;
+//       s++;
+//     } else {
+//       console.log("summa 1 go nabora iz "+ n +" elementov " + " ravno =:" +sum)
+//       s = 0;
+//     }
+//     if (n*k === count) {
+//       rl.close();
+//     }
+//   })
