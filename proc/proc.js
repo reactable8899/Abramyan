@@ -229,3 +229,32 @@
 //   proc24(i)
 // }
 // console.log(s)
+
+//№25
+// function isSquare(n) {
+//   let otvet = Math.sqrt(n);
+//   if (otvet * otvet === n) {
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// }
+// isSquare(621)
+
+//#26
+// var sum = 0,s = 0,t = 1;
+// function isPower(n) {
+//   while (n > 1) {
+//     n /= 5;
+//     s++;
+//   }
+//   for (let i = 0; i < s ; i++){
+//   t *= 5;
+//   }
+//   if (t === n){
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// }
+// isPower(25)
