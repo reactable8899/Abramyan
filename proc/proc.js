@@ -312,14 +312,52 @@
 // factN(5)
 
 //#36 1 1 2 3 5 8 13 21
-function fibN(n) {
-  let a1 = 1, a2 = 1, s = 1;
-  while (n > 2) {
-    n--;
-    s = a1 + a2;
-    a1 = a2;
-    a2 = s;
-  }
-  console.log(s)
-}
-fibN(7);
+
+// function fibN(n) {
+//   let a1 = 1, a2 = 1, s = 1;
+//   while (n > 2) {
+//     n--;
+//     s = a1 + a2;
+//     a1 = a2;
+//     a2 = s;
+//   }
+//   console.log(s)
+// }
+// fibN(7)
+
+//#46
+// function nod(a,b) {
+//   var s,nok,n = b;
+//   s = a - b;
+//   n -= s;
+//   console.log("Нод = " + n)
+//   nok = a * b / n;
+//   console.log("Нок = " + nok)
+// }
+// nod(126,70)
+
+//#52,53
+// function vGod(n,m) {
+//   if (n % 100 === 0 & n % 400 != 0) {
+//       console.log("nevis")
+//   } else if(n % 4 === 0) {
+//     console.log("vis")
+//     var k = 1;
+//   } else {
+//     console.log("nevis")
+//   }
+//   if (m % 2 === 1) {
+//     console.log("31 days on month")
+//   } else {
+//       if (m % 2 === 0 & m != 2) {
+//         console.log("30 days on month")
+//       } else {
+//           if (m == 2 & k == 1) {
+//             console.log("29 days on month")
+//           } else {
+//               console.log("28 days on month")
+//           }
+//       }
+//   }
+// }
+// vGod(2020,2)
