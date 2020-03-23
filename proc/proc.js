@@ -20,7 +20,7 @@
 // let b = 5;
 // let c = 3;
 // let d = 4;
-// function proc3(a,b) {
+// function proc3(a, b) {
 //   let aMean = (a + b) / 2;
 //   let gMean = (a * b);
 //   console.log(aMean);
@@ -322,4 +322,4 @@ function fibN(n) {
   }
   console.log(s)
 }
-fibN(7)
+fibN(7);
