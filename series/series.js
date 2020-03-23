@@ -733,75 +733,116 @@
 //   input: process.stdin,
 //   output: process.stdout
 // })
-//
-// let count = 0;
-// var s = 0;
-// var position = 0;
-// var gr = false;
-//   rl.on('line', line => {
-//     line = parseInt(line)
-//     count++;
-//     s++;
-//
-//     if (s % k === 1) {
-//       console.log(position)
-//       s = 0;
-//       gr = false;
-//     }
-//
-//     if (line === 2 & gr === false) {
-//       position = s;
-//       gr = true;
-//     }
-//
-//     if (n * k === count) {
-//       console.log(position)
-//       rl.close();
-//     }
-//   })
-
-//#34
-// const readline = require('readline');
-//
-// let n = process.argv[2];
-// n = parseInt(n);
-//
-// let k = process.argv[3];
-// k = parseInt(k);
-//
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
-//
+// var nomer = 0;
 // let count = 0;
 // var s = 0;
 // var sum = 0;
 // var gr = false;
-// var t = 0;
 //   rl.on('line', line => {
 //     line = parseInt(line)
 //     count++;
-//     sum += line;
-//     s++;
+//     sum++;
 //
-//     if (s / k === 1 & t != 0) {
-//       console.log(sum)
-//       t = 0;
-//       s = 0;
-//       sum = 0;
+//     if (line === 2 & gr === false) {
+//       nomer = sum;
+//       gr = true;
 //     }
-//     if (s / k === 1 & t === 0) {
-//       console.log(0)
-//       t = 0;
-//       s = 0;
+//
+//     if (sum % k === 0) {
+//       gr = false;
 //       sum = 0;
-//     }
-//     if (line === 2) {
-//       t++;
+//       console.log(nomer)
+//       nomer = 0;
 //     }
 //
 //     if (n * k === count) {
 //       rl.close();
 //     }
 //   })
+
+//#33
+ // const readline = require('readline');
+ //
+ //  let n = process.argv[2];
+ //  n = parseInt(n);
+ //
+ //  let k = process.argv[3];
+ //  k = parseInt(k);
+ //
+ //  const rl = readline.createInterface({
+ //    input: process.stdin,
+ //    output: process.stdout
+ //  })
+ //  var nomer = 0;
+ //  let count = 0;
+ //  var s = 0;
+ //  var sum = 0;
+ //  var gr = false;
+ //    rl.on('line', line => {
+ 
+ //      line = parseInt(line)
+ //      count++;
+ //      sum++;
+ //
+ //      if (line === 2 & gr === false) {
+ //        nomer = sum;
+ //      }
+ //
+ //      if (sum % k === 0) {
+ //        gr = false;
+ //        sum = 0;
+ //        console.log(nomer)
+ //        nomer = 0;
+ //      }
+ //
+ //      if (n * k === count) {
+ //        rl.close();
+ //      }
+ //    })
+
+//#34
+const readline = require('readline');
+
+let n = process.argv[2];
+n = parseInt(n);
+
+let k = process.argv[3];
+k = parseInt(k);
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
+let count = 0;
+var s = 0;
+var sum = 0;
+var gr = false;
+var t = 0;
+  rl.on('line', line => {
+    line = parseInt(line)
+    count++;
+    sum += line;
+    s++;
+
+    if (s / k === 1 & t != 0) {
+      console.log(sum)
+      t = 0;
+      s = 0;
+      sum = 0;
+    }
+    if (s / k === 1 & t === 0) {
+      console.log(0)
+      t = 0;
+      s = 0;
+      sum = 0;
+    }
+
+    if (line === 2) {
+      t++;
+    }
+
+    if (n * k === count) {
+      rl.close();
+    }
+  })
