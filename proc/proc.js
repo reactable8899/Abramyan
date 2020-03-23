@@ -33,7 +33,7 @@
 //#4
 // function proc4(a) {
 //   let p = 3*a;
-//   let s = a*a*Math.sqrt(4)/4;
+//   let s = a * a * Math.sqrt(4) / 4;
 //   console.log(p + " " + s)
 // }
 // proc4(2);
@@ -46,10 +46,10 @@
 // function proc5(c) {
 //   c = parseInt(c);
 //   while (c != 0) {
-//   s += c % 10;
-//   t++;
-//   c = c / 10;
-//   console.log(s + " " + t)
+//    s += c % 10;
+//    t++;
+//    c = c / 10;
+//    console.log(s + " " + t)
 //   }
 // }
 // proc5(1234)
@@ -57,22 +57,22 @@
 //#8
 // function proc8(k,d) {
 //   console.log(k)
-//   console.log(k+ "" +d)
+//   console.log(k + "" + d)
 //   let d1 = 1;
 //   let d2 = 2;
-//   console.log(k+ "" +d +"" +d1)
-//   console.log(k+ "" +d + d1+ "" +d2)
+//   console.log(k + "" + d +"" + d1)
+//   console.log(k+ "" + d + d1 + "" + d2)
 // }
 // proc8(2,5)
 
 //#9
 // function proc9(k,d) {
 //   console.log(k)
-//   console.log(d+ "" +k)
+//   console.log(d + "" + k)
 //   let d1 = 1;
 //   let d2 = 2;
-//   console.log(d1+ "" +d +"" +k)
-//   console.log(d2+""+d1+ "" +d +"" +k)
+//   console.log(d1 + "" + d + "" + k)
+//   console.log(d2 + "" + d1 + "" + d + "" + k)
 // }
 // proc8(2,5)
 
@@ -258,3 +258,68 @@
 //   }
 // }
 // isPower(25)
+
+//#28
+// function isPrime(n) {
+//   if (n % 2 != 0 & n % 3 != 0) {
+//     console.log("prostoe")
+//   } else if (n === 2 || n === 3 || n === 1) {
+//     console.log("prostoe")
+//   } else {
+//     console.log("zolotoe")
+//   }
+// }
+// isPrime(3)
+
+//#29
+// function digitCount(n) {
+//   var s = 1;
+//   if (n > 9) {
+//     while (n >= 10) {
+//       n /= 10;
+//       s++;
+//     }
+//   console.log(s)
+// } else {
+//   console.log(1)
+// }
+// }
+// digitCount(11)
+
+//#30
+// function digitN(n,k) {
+//   var s = 1;
+//   if (n > 9) {
+//     while (n > 9) {
+//       n /= 10;
+//       s++;
+//     }
+//   }
+//   if (s < k) {
+//     console.log(-1)
+//   }
+// }
+// digitN(11,3)
+
+//#34
+// function factN(n) {
+//   let s = 1;
+//   for (var i = 1; i <= n; i++) {
+//     s *= i
+//   }
+//   console.log(s)
+// }
+// factN(5)
+
+//#36 1 1 2 3 5 8 13 21
+function fibN(n) {
+  let a1 = 1, a2 = 1, s = 1;
+  while (n > 2) {
+    n--;
+    s = a1 + a2;
+    a1 = a2;
+    a2 = s;
+  }
+  console.log(s)
+}
+fibN(7)

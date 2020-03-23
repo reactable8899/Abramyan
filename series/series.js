@@ -721,44 +721,44 @@
 //   })
 
 //#32
-// const readline = require('readline');
-//
-// let n = process.argv[2];
-// n = parseInt(n);
-//
-// let k = process.argv[3];
-// k = parseInt(k);
-//
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
-// var nomer = 0;
-// let count = 0;
-// var s = 0;
-// var sum = 0;
-// var gr = false;
-//   rl.on('line', line => {
-//     line = parseInt(line)
-//     count++;
-//     sum++;
-//
-//     if (line === 2 & gr === false) {
-//       nomer = sum;
-//       gr = true;
-//     }
-//
-//     if (sum % k === 0) {
-//       gr = false;
-//       sum = 0;
-//       console.log(nomer)
-//       nomer = 0;
-//     }
-//
-//     if (n * k === count) {
-//       rl.close();
-//     }
-//   })
+  // const readline = require('readline');
+  //
+  // let n = process.argv[2];
+  // n = parseInt(n);
+  //
+  // let k = process.argv[3];
+  // k = parseInt(k);
+  //
+  // const rl = readline.createInterface({
+  //   input: process.stdin,
+  //   output: process.stdout
+  // })
+  // var nomer = 0;
+  // let count = 0;
+  // var s = 0;
+  // var sum = 0;
+  // var gr = false;
+  // rl.on('line', line => {
+  // line = parseInt(line)
+  // count++;
+  // sum++;
+  //
+  // if (line === 2 & gr === false) {
+  //   nomer = sum;
+  //   gr = true;
+  // }
+  //
+  // if (sum % k === 0) {
+  //   gr = false;
+  //   sum = 0;
+  //   console.log(nomer)
+  //   nomer = 0;
+  // }
+  //
+  // if (n * k === count) {
+  //   rl.close();
+  // }
+  // })
 
 //#33
  // const readline = require('readline');
@@ -778,71 +778,357 @@
  //  var s = 0;
  //  var sum = 0;
  //  var gr = false;
- //    rl.on('line', line => {
- 
- //      line = parseInt(line)
- //      count++;
- //      sum++;
+ //  rl.on('line', line => {
  //
- //      if (line === 2 & gr === false) {
- //        nomer = sum;
- //      }
+ //    line = parseInt(line)
+ //    count++;
+ //    sum++;
  //
- //      if (sum % k === 0) {
- //        gr = false;
- //        sum = 0;
- //        console.log(nomer)
- //        nomer = 0;
- //      }
+ //    if (line === 2 & gr === false) {
+ //      nomer = sum;
+ //    }
  //
- //      if (n * k === count) {
- //        rl.close();
- //      }
- //    })
+ //    if (sum % k === 0) {
+ //      gr = false;
+ //      sum = 0;
+ //      console.log(nomer)
+ //      nomer = 0;
+ //    }
+ //
+ //    if (n * k === count) {
+ //      rl.close();
+ //    }
+ //  })
 
 //#34
-const readline = require('readline');
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// let k = process.argv[3];
+// k = parseInt(k);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var s = 0;
+// var sum = 0;
+// var gr = false;
+// var t = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   sum += line;
+//   s++;
+//
+//   if (line === 2) {
+//     t++;
+//   }
+//
+//   if (s / k === 1 & t != 0) {
+//     console.log(sum)
+//     t = 0;
+//     s = 0;
+//     sum = 0;
+//   }
+//   if (s / k === 1 & t === 0) {
+//     console.log(0)
+//     t = 0;
+//     s = 0;
+//     sum = 0;
+//   }
+//
+//   if (n * k === count) {
+//     rl.close();
+//   }
+// })
 
-let n = process.argv[2];
-n = parseInt(n);
+//#35
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   obsheeKolvo++;
+//
+//   if (line === 0) {
+//     kol++;
+//   }
+//
+//   if (line === 0) {
+//     sum = count;
+//     count = 0;
+//     console.log(sum)
+//   }
+//
+//   if (kol === n) {
+//     console.log(obsheeKolvo)
+//     rl.close();
+//   }
+// })
 
-let k = process.argv[3];
-k = parseInt(k);
+//#36
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// var next = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line === 0 & sum === count - 1) {
+//     console.log("vozr")
+//     sum = 0;
+//     count = 0;
+//     obsheeKolvo++;
+//   }
+//
+//   if (line === 0) {
+//     kol++;
+//     sum = 0;
+//     count = 0;
+//   }
+//
+//   if (line > next) {
+//     sum++;
+//   }
+//
+//   next = line;
+//   if (kol === n) {
+//     console.log("Kolvo vozr-x naborov: " + obsheeKolvo)
+//     rl.close();
+//   }
+// })
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+//#37
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// var next = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line === 0 & sum === count - 1) {
+//     console.log("vozr")
+//     sum = 0;
+//     count = 0;
+//     obsheeKolvo++;
+//   }
+//
+//   if (line === 0) {
+//     kol++;
+//     sum = 0;
+//     count = 0;
+//   }
+//
+//   if (line > next) {
+//     sum++;
+//   }
+//
+//   next = line;
+//   if (kol === n) {
+//     console.log("Kolvo vozr-x naborov: " + obsheeKolvo)
+//     rl.close();
+//   }
+// })
 
-let count = 0;
-var s = 0;
-var sum = 0;
-var gr = false;
-var t = 0;
-  rl.on('line', line => {
-    line = parseInt(line)
-    count++;
-    sum += line;
-    s++;
+//#37
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// var next = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line === 0 & sum === count - 1) {
+//     console.log("vozr")
+//     sum = 0;
+//     count = 0;
+//     obsheeKolvo++;
+//   }
+//
+//   if (line === 0) {
+//     kol++;
+//     sum = 0;
+//     count = 0;
+//   }
+//
+//   if (line > next) {
+//     sum++;
+//   }
+//
+//   next = line;
+//   if (kol === n) {
+//     console.log("Kolvo vozr-x naborov: " + obsheeKolvo)
+//     rl.close();
+//   }
+// })
 
-    if (s / k === 1 & t != 0) {
-      console.log(sum)
-      t = 0;
-      s = 0;
-      sum = 0;
-    }
-    if (s / k === 1 & t === 0) {
-      console.log(0)
-      t = 0;
-      s = 0;
-      sum = 0;
-    }
+//#37
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// var obsheeKolvo2 = 0;
+// var next = 0;
+// var prev = 10000;
+// var sum2 = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line === 0 & sum === count - 1) {
+//     console.log("vozr")
+//     sum = 0;
+//     count = 0;
+//     obsheeKolvo++;
+//   }
+//
+//   if (line === 0 & sum2 === count - 1) {
+//     console.log("ubiv")
+//     sum2 = 0;
+//     count = 0;
+//     obsheeKolvo2++;
+//   }
+//
+//   if (line === 0) {
+//     kol++;
+//     sum = 0;
+//     sum2 = 0;
+//     count = 0;
+//   }
+//
+//   if (line > next) {
+//     sum++;
+//   }
+//   if (line < prev) {
+//     sum2++;
+//   }
+//   next = line;
+//   prev = line;
+//   if (kol === n) {
+//     console.log("Kolvo vozr-x naborov: " + obsheeKolvo)
+//     console.log("Kolvo ubiv-x naborov: " + obsheeKolvo2)
+//     rl.close();
+//   }
+// })
 
-    if (line === 2) {
-      t++;
-    }
-
-    if (n * k === count) {
-      rl.close();
-    }
-  })
+//#38
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// let count = 0;
+// var sum = 0;
+// var kol = 0;
+// var obsheeKolvo = 0;
+// var obsheeKolvo2 = 0;
+// var obsheeKolvo3 = 0;
+// var next = 0;
+// var prev = 10000;
+// var sum2 = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line === 0 & sum === count - 1) {
+//     console.log("vozr")
+//     sum = 0;
+//     count = 0;
+//     obsheeKolvo++;
+//   }
+//
+//   if (line === 0 & sum2 === count - 1) {
+//     console.log("ubiv")
+//     sum2 = 0;
+//     count = 0;
+//     obsheeKolvo2++;
+//   }
+//   if (line === 0 & sum2 != count & sum != count) {
+//     console.log(0)
+//     obsheeKolvo3++;
+//   }
+//   if (line === 0) {
+//     kol++;
+//     sum = 0;
+//     sum2 = 0;
+//     count = 0;
+//   }
+//
+//   if (line > next) {
+//     sum++;
+//   }
+//   if (line < prev) {
+//     sum2++;
+//   }
+//   next = line;
+//   prev = line;
+//   if (kol === n) {
+//     console.log("Kolvo vozr-x naborov: " + obsheeKolvo)
+//     console.log("Kolvo ubiv-x naborov: " + obsheeKolvo2)
+//     console.log("Kolvo razn naborov: " + obsheeKolvo3)
+//     rl.close();
+//   }
+// })
