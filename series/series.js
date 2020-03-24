@@ -27,12 +27,15 @@
 
 //#2
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 1;
 //
@@ -49,12 +52,16 @@
 
 //#3
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
+
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 0;
 
@@ -64,19 +71,22 @@
 //   sum += line;
 
 //   if (count === n) {
-//     console.log(sum/count);
+//     console.log(sum / count);
 //     rl.close();
 //   }
 // })
 
 //#4
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 0;
 // let r = 1;
@@ -96,12 +106,15 @@
 
 //#5
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 0;
 
@@ -119,12 +132,15 @@
 
 //#6
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 0;
 // var r = 1;
@@ -145,12 +161,15 @@
 
 //#7
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+
 // let count = 0;
 // let sum = 0;
 // var r = 1;
@@ -167,8 +186,10 @@
 
 //#8
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -192,8 +213,10 @@
 
 //#10
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -204,7 +227,6 @@
 
 // rl.on('line', line => {
 //     line = parseInt(line);
-
 //     if (line > 0) {
 //       console.log("true")
 //     } else {
@@ -218,10 +240,13 @@
 
 //№11
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // let k = process.argv[3];
 // k = parseInt(k);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -245,23 +270,25 @@
 
 //#12
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+//
 // let count = 0;
-
+//
 // rl.on('line', line => {
 //     line = parseInt(line);
-
+//     count++;
 //     if (line == 0) {
+//       console.log(count - 1)
 //     rl.close();
 //     }
-//     console.log(line)
-//     count++;
-
+//
 //   if (count === n) {
 //     rl.close();
 //   }
@@ -269,53 +296,58 @@
 
 //#13
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
 // let count = 0;
-
+// var sum = 0;
+//
 // rl.on('line', line => {
 //     line = parseInt(line);
 //     if (line == 0) {
 //     rl.close();
 //     }
-
+//
 //     if ( ( ( line % 2 ) == 0 ) && ( line > 0 ) ) {
-//       console.log(line)
-//     } else {
-//       console.log(0)
+//       sum += line
 //     }
 //     count++;
-
+//
 //   if (count === n) {
+//     console.log(sum)
 //     rl.close();
 //   }
 // })
 
 //#15
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // let k = process.argv[3];
 // k = parseInt(k);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
 // let count = 0;
-
+//
 // rl.on('line', line => {
 //   count++;
 //     line = parseInt(line);
-
+//
 //     if (line === k) {
 //     s = count;
 //       console.log(s)
 //     }
-
+//
 //   if (count === n) {
 //     rl.close();
 //   }
@@ -323,25 +355,28 @@
 
 //#17
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // let k = process.argv[3];
 // k = parseFloat(k);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
 // let count = 0;
-
+//
 // rl.on('line', line => {
 //   count++;
 //     line = parseInt(line);
-
+//
 //     if (line < k) {
 //       console.log(k)
 //     }
 //     console.log(line)
-
+//
 //   if (count === n) {
 //     rl.close();
 //   }
@@ -349,65 +384,78 @@
 
 //#19
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
+//
 // let count = 0;
 // var s = 0;
-
+//
 // rl.on('line', line => {
 //   count++;
-
-//   if ( s > line ) {
-//       console.log( " " + s)
-//   }
-//   s = line;
-
+//
 //   if (count === 1) {
 //     s = 0;
 //     return ;
 //   }
+//
+//   if ( s > line ) {
+//       console.log( " " + s)
+//   }
+//
+//   s = line;
+//
 //   if (count === n) {
+//     console.log( " " + s)
 //     rl.close();
 //   }
 // })
 
 //#21
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
+//
 // })
 // let count = 0;
 // var s = 0;
 // var k = 0;
-
+//
 // rl.on('line', line => {
 //   count++;
-
+//
 //   if (s < line) {
 //     k++;
 //   }
-//   if ( k === count ) {
-//     console.log("true")
-//   } else {
-//     console.log("false")
-//   }
+//
 //   s = line;
-//   if (count === n) {
+//   if (count === n & k === count) {
+//     console.log(true)
 //     rl.close();
-//   }
+//   } else{
+//       if (count === n) {
+//         console.log(false)
+//     rl.close();
+//       }
+//     }
 // })
 
 //#22
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -415,26 +463,38 @@
 // let count = 0;
 // var s = n;
 // var k = 0;
+// var nomer = 0;
+// var ss = false;
 //
 // rl.on('line', line => {
 //   count++;
-//   if ( line <= s) {
+//
+//   if (line <= s) {
 //     k++
-//   } else {
-//     console.log(line)
+//   }
+//
+//   if (s < line & ss === false) {
+//     nomer = count;
+//     console.log(nomer)
+//     ss = true;
+//   }
+//
+//   s = line;
+//   if (count === n) {
+//     if (k === count) {
+//       console.log(0)
+//     }
 //     rl.close()
 //   }
-//   s = line;
-//   if (n === k) {
-//     console.log("0")
-//     rl.close();
-//   }
+//
 // })
 
 //#23
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -444,6 +504,7 @@
 // var k = 0;
 // var t = 0;
 // var m = 0;
+//
 // rl.on('line', line => {
 //   count++;
 //   if (count === 1) { t = line; return; }
@@ -461,29 +522,32 @@
 
 //#25
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
 // })
 // let count = 0;
-// var s = n;
+// var s = 0;
 // var k = 0;
 // var t = 0;
 //
 // rl.on('line', line => {
 //   count++;
-//   if ( line == 0 ) {
+//   if ( line === 0 ) {
 //     t++;
 //   }
-//   if ( t > 0 ) {
-//     console.log(line)
+//   if (t > 0) {
+//     s += line;
 //   }
 //   if ( t > 1) {
+//     console.log(s)
 //     rl.close();
 //   }
-//   s = line;
+//
 //   if (n === count) {
 //     console.log("0")
 //     rl.close();
@@ -492,10 +556,13 @@
 
 //#26
 // const readline = require('readline');
+//
 // let k = process.argv[2];
 // k = parseInt(k);
+//
 // let n = process.argv[3];
 // n = parseInt(n);
+//
 // var s = 0;
 // const rl = readline.createInterface({
 //   input: process.stdin,
@@ -517,8 +584,10 @@
 
 //#27
 // const readline = require('readline');
+//
 // let n = process.argv[2];
 // n = parseInt(n);
+//
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -530,8 +599,8 @@
 //   s = line;
 //   for (var i = 1; i < count ; i++){
 //     line *= s;
-//     console.log(line)
 //   }
+//   console.log(line)
 //   if (n === count) {
 //     rl.close();
 //   }
@@ -539,8 +608,10 @@
 
 //#28
 // const readline = require('readline');
+
 // let n = process.argv[2];
 // n = parseInt(n);
+
 // const rl = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout
@@ -596,7 +667,6 @@
 //   })
 
 //#30
-
 // const readline = require('readline');
 //
 // let k = process.argv[2];
