@@ -408,11 +408,14 @@
 // rl.on('line', line => {
 //   line = parseInt(line)
 //   count++;
-//   if (line < 0) {
-//     smin++;
+//   if (count === 1) {
+//     min = line;
+//   }
+//   if (count === 2 & line > min) {
+//     min = line;
 //   }
 //   if (line < 0) {
-//     s = line
+//     smin++;
 //   }
 //   if (line >= 0 & line < min) {
 //     min = line;
@@ -427,4 +430,340 @@
 //     console.log(min)
 //     rl.close();
 //   }
+// })
+
+//#13
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var max = 0;
+// var nomer = 0;
+// var s = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (count === 1 & line % 2 === 1) {
+//     max = line;
+//     nomer = count;
+//   }
+//   if ((line % 2 === 1) & line > max) {
+//     max = line;
+//     nomer = count;
+//   }
+//   if (count === n) {
+//     console.log(nomer)
+//     rl.close();
+//   }
+// })
+
+//#14
+// const readline = require('readline');
+//
+// let b = process.argv[2];
+// b = parseInt(b);
+//
+// let n = process.argv[3];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var min = 0;
+// var nomer = 0;
+// var s = true;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line > b & s === true) {
+//     min = line;
+//     nomer = count;
+//     s = false;
+//   }
+//   if (line < min & line > b) {
+//     min = line;
+//     nomer = count;
+//   }
+//
+//   if (count === n) {
+//     console.log(nomer)
+//     rl.close();
+//   }
+// })
+//#15
+// const readline = require('readline');
+//
+// let b = process.argv[2];
+// b = parseInt(b);
+//
+// let c = process.argv[3];
+// c = parseInt(c);
+//
+// let n = process.argv[4];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var max = 0;
+// var nomer = 0;
+// var s = true;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (b < line && line < c && line > max) {
+//     max = line;
+//     nomer = count;
+//   }
+//   if (count === n) {
+//     console.log("max = " + max)
+//     console.log("nomer = " + nomer)
+//     rl.close();
+//   }
+// })
+//#16
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var min = 0;
+// var kol = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (count === 1) {
+//     min = line;
+//     kol++;
+//   }
+//   if (line < min) {
+//     min = line;
+//     kol = count;
+//   }
+//   if (kol === 0) {
+//     console.log(0);
+//     rl.close();
+//   }
+//   else {
+//     if (count === n) {
+//       console.log(kol - 1)
+//       rl.close();
+//     }
+// }
+// })
+//#17
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var max = 0;
+// var kol = 0;
+// var znak = true;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   kol++;
+//   if (count === 1) {
+//     max = line;
+//     kol = 0;
+//   }
+//   if (line > max) {
+//     max = line;
+//     kol = 0;
+//   }
+// if (count === n) {
+//   console.log(kol)
+//   rl.close();
+//
+// }
+// })
+//#18
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var maxP = 0;
+// var kol = 0;
+// var znak = true;
+// var s = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (line < maxP && znak === true) {
+//     kol++;
+//   }
+//   if (line === maxP) {
+//     znak = false;
+//   }
+//   if (line > maxP) {
+//     maxP = line;
+//     kol = 0;
+//   }
+// if (count === n) {
+//   if (s > 0) {
+//     console.log(0)
+//     rl.close();
+//   }
+//   console.log(kol)
+//   rl.close();
+// }
+// })
+//#19
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var min = 0;
+// var kol = 0;
+// var s = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (count === 1) {
+//     min = line;
+//   }
+//   if (line < min) {
+//     min = line;
+//     kol = 0;
+//   }
+//   if (min === line) {
+//     kol++;
+//   }
+//
+// if (count === n) {
+//   console.log("kol-vo min elementov = " + kol)
+//   rl.close();
+// }
+// })
+
+//#20
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var min1 = 0;
+// var min2 = 0;
+// var kol = 0;
+// var s = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (count === 1) {
+//     min1 = line;
+//   }
+//   if (count === 2) {
+//     min2 = line;
+//   }
+//   if (line < min1) {
+//     min1 = line;
+//   }
+// if (count === n) {
+//   console.log(min1 + " " + min2)
+//   rl.close();
+// }
+// })
+
+//#24
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var sum = 0;
+// var r = 0;
+// var result = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   sum += line;
+//   if (sum > r) {
+//     r = sum
+//   }
+//   if (count % 2 === 0) {
+//     sum = 0;
+//   }
+// if (count === n) {
+//   console.log(r)
+//   rl.close();
+// }
 // })
