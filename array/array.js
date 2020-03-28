@@ -277,32 +277,299 @@
 //   console.log("NOT AR_prog")
 // }
 
-//#26            !!!!!!!!
-// var arr = [1,1,3,4,5,6,7,8,9,10];
+//#26
+// var arr = [1,2,2,4,5,6,7,8];
 // var s = 0,t = 0;
 // for (var i = 0; i < arr.length; i++) {
-//   if (arr[i] % 2 === 1) {
+//   if ((arr[i] % 2 === 1 && arr[i + 1] % 2 === 0) || (arr[i] % 2 === 0 && arr[i + 1] % 2 === 1)){
 //     s++;
 //   }
-//   if (arr[i] % 2 === 0) {
-//     t++;
-//   }
 // }
-// console.log(arr.length)
-// if (s + t === arr.length) {
-//   console.log(0)
+// if (s === arr.length - 1) {
+//   console.log("chereduyutsya")
+// } else {
+//   console.log("0")
 // }
 
-//#27           !!!!!!!
-// var arr = [1,-3,4,-5,7,-8,9];
+//#27
+// var arr = [1,-3,-4,-5,7,-8];
 // var s = 0,t = 0;
 // for (var i = 0; i < arr.length; i++) {
-//   if (arr[i] > 0 && arr[i + 1]) {
+//   if ((arr[i] > 0 && arr[i + 1] < 0) || (arr[i] < 0 && arr[i + 1] > 0)){
 //     s++;
 //   }
 // }
-// if (arr.length / 2 === s) {
-//   console.log(0)
+// if (s === arr.length - 1) {
+//   console.log("chereduyutsya")
 // } else {
-//   console.log("hz")
+//   console.log("0")
 // }
+
+//#28
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   min = arr[0];
+//   for (var i = 0; i < arr.length; i += 2) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   console.log("min = " + min)
+// }
+
+//#29
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   max = arr[1];
+//   console.log(arr[1])
+//   for (var i = 1; i < arr.length; i += 2) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   console.log("min = " + max)
+// }
+
+//#30
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//       console.log(i)
+//       s++;
+//     }
+//   }
+//   console.log("kol = " + s)
+// }
+
+//#31
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   for (var i = arr.length; i > 0; i--) {
+//     if (arr[i] > arr[i - 1]) {
+//       console.log(i)
+//       s++;
+//     }
+//   }
+//   console.log("kol = " + s)
+// }
+
+//32
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var min = 0;
+//   for (var i = 1; i < arr.length;i++) {
+//     if (arr[i - 1] > arr[i] && arr[i] < arr[i + 1]) {
+//       console.log(i);
+//        i = arr.length;
+//     }
+//   }
+// }
+
+//#34
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var max = 0;
+//   for (var i = 1; i < arr.length;i++) {
+//     if (arr[i - 1] > arr[i] && arr[i] < arr[i + 1] && arr[i] > max) {
+//       max = arr[i];
+//       console.log(max)
+//     }
+//   }
+// }
+
+//#35
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var min = 0;
+//   min = arr[1];
+//   for (var i = 1; i < arr.length;i++) {
+//     if (arr[i - 1] < arr[i] && arr[i] > arr[i + 1] && arr[i] < min) {
+//       min = arr[i];
+//
+//     }
+//   }
+//   console.log(min)
+// }
+
+//#37 38 39
+
+//#40
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var r = process.argv[3];
+// r = parseInt(r);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var min = 0;
+//   min = arr[0];
+//   for (var i = 1; i < arr.length; i++) {
+//     if (arr[i] < min && arr[i] > r) {
+//       min = arr[i];
+//     }
+//   }
+//   console.log(min)
+// }
+
+//#41
