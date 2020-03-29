@@ -536,7 +536,8 @@
 
 //#37 38 39
 
-//#40
+
+//#40!!!
 // const readline = require('readline');
 //
 // const rl = readline.createInterface({
@@ -562,14 +563,95 @@
 // })
 //
 // function array1(){
-//   var min = 0;
-//   min = arr[0];
-//   for (var i = 1; i < arr.length; i++) {
-//     if (arr[i] < min && arr[i] > r) {
-//       min = arr[i];
+//   var min = arr[0];
+//   var otvet = 0;
+//   for (var k = 0; k < arr.length; k++) {
+//     if (arr[k] > r) {
+//       min = arr[k];
 //     }
 //   }
 //   console.log(min)
+  // for (var i = 0; i < arr.length; i++) {
+  //   if (arr[i] > r && (arr[i] - r <= min)) {
+  //     min = (arr[i] - r)
+  //     otvet = arr[i];
+  //     console.log(" " + otvet)
+  //     console.log(" " + min)
+  //   }
+  // }
+
 // }
 
 //#41
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var max = 0;
+//   var sum = 0;
+//   for (var i = 1; i < arr.length - 1; i++) {
+//     sum = (+arr[i - 1] + +arr[i + 1]);
+//     console.log(sum)
+//     if (sum > max) {
+//       max = sum;
+//     }
+//   }
+//   console.log(" " + max)
+// }
+
+//#42!!!
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var r = process.argv[3];
+// r = parseInt(r);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var min = +arr[0] + +arr[2];
+//   var sum = 0;
+//   var r;
+//   for (var i = 1; i < arr.length - 1; i++) {
+//     sum = (+arr[i - 1] + +arr[i + 1]);
+//     if ((sum - r) < min && (sum - r) > r) {
+//       min = sum;
+//       console.log( " " + min)
+//     }
+//   }
+//   console.log(" " + min)
+// }
