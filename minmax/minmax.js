@@ -284,14 +284,11 @@
 //     max = line;
 //     nomerMax = line;
 //   }
-//   if (line < min) {
+//   if (line <= min) {
 //     min = line;
 //     nomerMin = count;
 //   }
-//   if (min === line) {
-//     nomerMin = count;
-//   }
-//   if (line > max) {
+//   if (line >= max) {
 //     max = line;
 //     nomerMax = count;
 //   }
@@ -372,7 +369,7 @@
 //     nomerMax = count;
 //     nomerMaxP = count;
 //   }
-//   if (line > max) {
+//   if (line >= max) {
 //     max = line;
 //     nomerMax = count;
 //   }
@@ -452,7 +449,7 @@
 // rl.on('line', line => {
 //   line = parseInt(line)
 //   count++;
-//   if (count === 1 & line % 2 === 1) {
+//   if (count === 1 && line % 2 === 1) {
 //     max = line;
 //     nomer = count;
 //   }
@@ -490,12 +487,12 @@
 // rl.on('line', line => {
 //   line = parseInt(line)
 //   count++;
-//   if (line > b & s === true) {
+//   if (line > b && s === true) {
 //     min = line;
 //     nomer = count;
 //     s = false;
 //   }
-//   if (line < min & line > b) {
+//   if (line < min && line > b) {
 //     min = line;
 //     nomer = count;
 //   }
@@ -611,9 +608,9 @@
 //     max = line;
 //     kol = 0;
 //   }
-// if (count === n) {
-//   console.log(kol)
-//   rl.close();
+//   if (count === n) {
+//     console.log(kol)
+//     rl.close();
 //
 // }
 // })
@@ -690,9 +687,9 @@
 //     kol++;
 //   }
 //
-// if (count === n) {
-//   console.log("kol-vo min elementov = " + kol)
-//   rl.close();
+//   if (count === n) {
+//     console.log("kol-vo min elementov = " + kol)
+//     rl.close();
 // }
 // })
 
@@ -727,10 +724,14 @@
 //   if (line < min1) {
 //     min1 = line;
 //   }
-// if (count === n) {
-//   console.log(min1 + " " + min2)
-//   rl.close();
-// }
+//   if (line > min1 && line < min2) {
+//     min2 = line;
+//   }
+//   console.log( " " + min1 + " " + min2)
+//   if (count === n) {
+//     console.log(min1 + " " + min2)
+//     rl.close();
+//   }
 // })
 
 //#24
@@ -762,9 +763,9 @@
 //     r = sum;
 //     sum = 0;
 //   }
-// if (count === n) {
-//   console.log(result)
-//   rl.close();
+//   if (count === n) {
+//     console.log(result)
+//     rl.close();
 // }
 // })
 
@@ -800,9 +801,9 @@
 //     r = sum;
 //     sum = 1;
 //   }
-// if (count === n) {
-//   console.log(result)
-//   rl.close();
+//   if (count === n) {
+//     console.log(result)
+//     rl.close();
 // }
 // })
 
@@ -875,10 +876,10 @@
 //   }
 //   lineup = line;
 //
-// if (count === n) {
-//   console.log(r)
-//   rl.close();
-// }
+//   if (count === n) {
+//     console.log(r)
+//     rl.close();
+//   }
 // })
 
 //#30
