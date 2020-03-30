@@ -534,9 +534,106 @@
 // }
 
 //#37 38 39
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var num = 0;
+//   for (i = 2; i <= n; i++) {
+//     if ((arr[i - 2] < arr[i - 1]) && !(arr[i - 1] < arr[i])){
+//         num++;
+//     }
+// }
+// console.log(num)
+// }
 
+//#38
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var num = 0;
+//   for (i = 2; i <= n; i++) {
+//     if ((arr[i - 2] > arr[i - 1]) && !(arr[i - 1] > arr[i])){
+//         num++;
+//     }
+// }
+// console.log(num)
+// }
 
-//#40!!!
+//#39
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var num = 0;
+//   var num2 = 0;
+//   for (i = 2; i <= n; i++) {
+//     if ((arr[i - 2] > arr[i - 1]) && !(arr[i - 1] > arr[i])){
+//         num++;
+//     }
+//     if ((arr[i - 2] < arr[i - 1]) && !(arr[i - 1] < arr[i])){
+//         num2++;
+//     }
+// }
+// console.log(num + num2)
+// }
+
+//#40
 // const readline = require('readline');
 //
 // const rl = readline.createInterface({
@@ -562,23 +659,17 @@
 // })
 //
 // function array1(){
-//   var min = arr[0];
-//   var otvet = 0;
-//   for (var k = 0; k < arr.length; k++) {
-//     if (arr[k] > r) {
-//       min = arr[k];
+//   var min = arr[0] - r;
+//   var nomer = 0;
+//   var num = 0;
+//   for (var i = 1; i < arr.length; i++) {
+//     if ((arr[i] - r) < min) {
+//       min = (arr[i] - r)
+//       nomer = i;
+//       num = arr[i]
 //     }
 //   }
-//   console.log(min)
-  // for (var i = 0; i < arr.length; i++) {
-  //   if (arr[i] > r && (arr[i] - r <= min)) {
-  //     min = (arr[i] - r)
-  //     otvet = arr[i];
-  //     console.log(" " + otvet)
-  //     console.log(" " + min)
-  //   }
-  // }
-
+// console.log("nomer chisla = " + (nomer + 1),"chislo = " + num)
 // }
 
 //#41
@@ -616,7 +707,7 @@
 //   console.log(" " + max)
 // }
 
-//#42!!!
+//#42
 // const readline = require('readline');
 //
 // const rl = readline.createInterface({
@@ -642,15 +733,213 @@
 // })
 //
 // function array1(){
-//   var min = +arr[0] + +arr[2];
+//   var max = (+arr[0] + +arr[2]) - r;
+//   var n1,n2;
 //   var sum = 0;
-//   var r;
-//   for (var i = 1; i < arr.length - 1; i++) {
-//     sum = (+arr[i - 1] + +arr[i + 1]);
-//     if ((sum - r) < min && (sum - r) > r) {
-//       min = sum;
-//       console.log( " " + min)
+//   var max = 0;
+//   for (var i = 0; i < arr.length - 2; i++) {
+//     max = +arr[i] + +arr[i + 2]
+//     if ((max - r) > max) {
+//       sum = max;
+//       n1 = i;
+//       n2 = i + 2;
+//       console.log(sum)
+//     }
+// }
+// console.log(n1,n2,sum)
+// }
+
+//#43
+
+//#44
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   for (var i = 0; i < arr.length; i++) {
+//     for (var j = i + 1; j < arr.length; j++) {
+//       if (arr[i] === arr[j]) {
+//       console.log(i,j)
+//       }
 //     }
 //   }
-//   console.log(" " + min)
+//   //console.log(i,j)
+// }
+
+//#45
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var min = 0;
+//   var n1 = 0;
+//   var n2 = 0;
+//   min = arr[0] - arr[1];
+//   for (var i = 0; i < arr.length; i++) {
+//     if ((arr[i] - arr[i + 1]) > min) {
+//       min = (arr[i] - arr[i + 1])
+//       n1 = i;
+//       n2 = i + 1;
+//       console.log(n1,n2)
+//     }
+//   }
+// }
+
+//#46
+
+//#47
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   var temp = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     for(var j = 0; j < arr.length; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+//   for (i = 0; i < arr.length; i++){
+//     if (arr[i] != arr[i + 1]) {
+//       s++;
+//     }
+//   }
+//   console.log(s)
+// }
+
+//#48
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var max = 0;
+//   var s = 1;
+//   for (i = 0; i < arr.length; i++){
+//     for (j = i + 1; j < arr.length; j++) {
+//       if (arr[i] === arr[j]) {
+//         s++;
+//       }
+//     }
+//     if (s > max) {
+//       max = s;
+//     }
+//     s = 0;
+//   }
+//   console.log(max)
+// }
+
+//#49!!!!!!!!!!!!!!
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line);
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   var nomer = 0;
+//   for (var k = 1; k <= n; k++) {
+//     for (var i = 0; i < arr.length; i++) {
+//       if (arr[i] === k) {
+//         s++;
+//       }
+//     }
+//   }
+//   //console.log(s)
+//   if (s === n) {
+//     console.log(0)
+//   }
 // }
