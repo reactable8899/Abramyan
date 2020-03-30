@@ -453,7 +453,7 @@
 //     max = line;
 //     nomer = count;
 //   }
-//   if ((line % 2 === 1) & line > max) {
+//   if ((line % 2 === 1) && line > max) {
 //     max = line;
 //     nomer = count;
 //   }
@@ -710,26 +710,78 @@
 // var count = 0;
 // var min1 = 0;
 // var min2 = 0;
-// var kol = 0;
-// var s = 0;
 // rl.on('line', line => {
 //   line = parseInt(line)
 //   count++;
 //   if (count === 1) {
 //     min1 = line;
-//   }
-//   if (count === 2) {
 //     min2 = line;
 //   }
-//   if (line < min1) {
-//     min1 = line;
+//   if (min2 > line) {
+//     if (min1 > line) {
+//       min2 = min1;
+//       min1 = line;
+//     } else {
+//       min2 = line;
+//     }
 //   }
-//   if (line > min1 && line < min2) {
+//   if (min1 === min2) {
 //     min2 = line;
 //   }
-//   console.log( " " + min1 + " " + min2)
 //   if (count === n) {
-//     console.log(min1 + " " + min2)
+//     console.log(min1,min2)
+//     rl.close();
+//   }
+// })
+
+//#23
+// const readline = require('readline');
+//
+// let n = process.argv[2];
+// n = parseInt(n);
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+//
+// if (n <= 0) {
+//   rl.close();
+// }
+// var count = 0;
+// var max1 = 0;
+// var max2 = 0;
+// var max3 = 0;
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   count++;
+//   if (count === 1) {
+//     max3 = line;
+//     max2 = line;
+//     max1 = line;
+//   }
+//   if (line > max3) {
+//     if (line > max2) {
+//       if (line > max1) {
+//         max3 = max2;
+//         max2 = max1;
+//         max1 = line;
+//       } else {
+//         min3 = max2;
+//         max2 = line;
+//       }
+//     } else {
+//       max3 = line;
+//     }
+//   }
+//   if (max1 === max2) {
+//     max2 = line;
+//   }
+//   if (max3 === max1 || max3 ===max2) {
+//     max3 = line;
+//   }
+//   if (count === n) {
+//     console.log(max1,max2,max3)
 //     rl.close();
 //   }
 // })
