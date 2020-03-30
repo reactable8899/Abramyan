@@ -79,7 +79,7 @@
 
 //#7
 // var arr = [1,2,3,4,5,6,7,8,9,10];
-// for (var i = arr.length; i >= 0; i--){
+// for (var i = arr.length - 1; i >= 0; i--){
 //   console.log(arr[i])
 // }
 
@@ -116,7 +116,7 @@
 //   }
 // }
 // console.log("kol = " + s)
-// for (var j = arr.length; j > 0; j--) {
+// for (var j = arr.length - 1; j >= 0; j--) {
 //   if (arr[j] % 2 === 1) {
 //     console.log(arr[j])
 //     t++;
@@ -133,19 +133,14 @@
 // }
 
 //#12
-// var k = process.argv[2];
-// k = parseInt(k);
 // var arr = [1,2,3,1,5,4,7,1,2,587,6];
 // for (var i = 2; i < arr.length; i += 2) {
 //   console.log(arr[i])
 // }
 
 //#13
-// var k = process.argv[2];
-// k = parseInt(k);
 // var arr = [1,2,3,1,5,4,7,1,2,587,6];
-// console.log(arr.length)
-// for (var i = arr.length; i > 0; i -= 2) {
+// for (var i = arr.length - 2; i >= 0; i -= 2) {
 //   console.log(arr[i])
 // }
 
@@ -154,22 +149,23 @@
 // for (var i = 2; i < arr.length; i += 2) {
 //   console.log(arr[i])
 // }
-// console.log("/br")
-// for (var i = 1; i < arr.length; i += 2) {
+// console.log("\n")
+//
+// for (var i = 1; i < arr.length - 1; i += 2) {
 //   console.log(arr[i])
 // }
 
 //#16
 // var arr = [1,2,3,1,5,4,7,1,2,587,6];
 // for (var i = arr.length - 1; i >= 0; i--) {
-//     console.log(arr[arr.length - 1 - i])
+//   console.log(arr[arr.length - 1 - i])
 //   console.log(arr[i])
 // }
 
 //#17
 // var arr = [1,2,3,1,5,4,7,1,2,587,6];
 // for (var i = arr.length - 1; i >= 0; i--) {
-//     console.log(arr[arr.length - 1 - i])
+//   console.log(arr[arr.length - 1 - i])
 //   console.log(arr[i])
 // }
 
@@ -183,7 +179,7 @@
 //      return 0;
 //    }
 //  }
-//  if (s != 1) {
+//  if (s !== 1) {
 //    console.log(0)
 //  }
 
@@ -260,7 +256,7 @@
 // console.log((otvet - sum)/(s-t))
 
 //#24
-// var arr = [1,2,3,4,5,6,7,8];
+// var arr = [2,4,6,8,10,12];
 // var s = 0;
 // var prov = 0;
 // s = arr[1] - arr[0];
@@ -278,11 +274,14 @@
 // }
 
 //#26
-// var arr = [1,2,2,4,5,6,7,8];
+// var arr = [1,2,3,4,5,4,7,8];
 // var s = 0,t = 0;
-// for (var i = 0; i < arr.length; i++) {
+// for (var i = 0; i < arr.length - 1; i++) {
 //   if ((arr[i] % 2 === 1 && arr[i + 1] % 2 === 0) || (arr[i] % 2 === 0 && arr[i + 1] % 2 === 1)){
 //     s++;
+//   } else {
+//     console.log(arr[i])
+//     return 0;
 //   }
 // }
 // if (s === arr.length - 1) {
