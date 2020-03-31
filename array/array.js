@@ -928,18 +928,392 @@
 //   }
 // })
 //
-// function array1(){
+// function array1() {
 //   var s = 0;
-//   var nomer = 0;
-//   for (var k = 1; k <= n; k++) {
-//     for (var i = 0; i < arr.length; i++) {
-//       if (arr[i] === k) {
-//         s++;
+//   var temp = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     for(var j = 0; j < arr.length; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
 //       }
 //     }
 //   }
-//   //console.log(s)
+//
+//   for (i = 1; i <= n; i++) {
+//     if (arr[i - 1] === i) {
+//       s++;
+//     } else {
+//       tmp = arr[i - 1];
+//     }
+//   }
 //   if (s === n) {
 //     console.log(0)
 //   }
 // }
+
+//#50
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//       s++;
+//     }
+//   }
+//   console.log(s)
+// }
+
+//#51
+// var arr = [1,2,3,4,5,6];
+// var arr2 = [1,3,5,7,9,1];
+// var tmp = [];
+//   tmp = arr;
+//   arr = arr2;
+//   arr2 = tmp;
+//   console.log(arr,arr2)
+
+//#52
+// var arr = [1,2,3,6,7,8,9];
+// var arr2 = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] <= 5) {
+//       arr2[i] = arr[i]
+//     }
+//     if (arr[i] > 5) {
+//       arr2[i] = arr[i] / 2;
+//     }
+//   }
+//   console.log(arr2)
+
+//#53
+// var a = [5,6,7,2,10];
+// var b = [1,12,6,11,7];
+// var c = [];
+// var maxA = a[0];
+// var maxB = b[0];
+// var indexA = a[0];
+// var indexB = b[0];
+//   for(var i = 1; i < a.length; i++) {
+//     if (a[i] > maxA) {
+//       maxA = a[i];
+//       indexA = i;
+//     }
+//     if (b[i] > maxB) {
+//       maxB = b[i];
+//       indexB = i;
+//     }
+//   }
+//   c[indexA] = maxA;
+//   c[indexB] = maxB;
+// console.log(c)
+
+// #54
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     if (a[i] % 2 === 0) {
+//       b[j++] = a[i];
+//     }
+//   }
+// console.log(b,b.length)
+
+// #55
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+//   for (var i = 1; i < a.length; i += 2) {
+//     b[j++] = a[i];
+//   }
+// console.log(b,b.length)
+
+//#56
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+//   for (var i = 3; i < a.length; i += 3) {
+//     b[j++] = a[i];
+//   }
+// console.log(b,b.length)
+
+//57
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+//   for (var i = 2; i < a.length; i += 2) {
+//     b[j++] = a[i];
+//   }
+//   for (var i = 1; i < a.length; i += 2) {
+//     b[j++] = a[i];
+//   }
+// console.log(b,b.length)
+
+//#58
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+// var sum = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     sum += a[i];
+//     b[j++] = sum;
+//   }
+// console.log(b,b.length)
+
+//#59
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+// var sum = 0;
+// var sr = 0;
+// var n = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     n++;
+//     sum += a[i];
+//     sr = sum / n;
+//     b[j++] = sr;
+//   }
+// console.log(b,b.length)
+
+//#60
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+// var sum = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     for (var k = i; k < a.length; k++) {
+//       sum += a[k];
+//       b[i] = sum;
+//     }
+//     sum = 0;
+//   }
+// console.log(b,b.length)
+
+//61
+// var a = [1,2,3,4,5,6,7,8,9];
+// var b = [];
+// var j = 0;
+// var sr = 0;
+// var n = 0;
+// var sum = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     for (var k = i; k < a.length; k++) {
+//       n++;
+//       sum += a[k];
+//       sr = sum / n;
+//       b[i] = sr;
+//     }
+//     sum = 0;
+//     n = 0;
+//   }
+// console.log(b,b.length)
+
+//#63
+// var a = [1,3,5,7,9];
+// var b = [4,8,11,6,10];
+// var c = [];
+// var k = 0;
+// var temp = 0;
+// for (var i = 0; i < 5; i++) {
+//   c[k++] = a[i];
+//   c[k++] = b[i];
+// }
+// console.log(c)
+//
+// for(var i = 0; i < c.length; i++) {
+//   for(var j = 0; j < c.length; j++){
+//     if (c[j] > c[j + 1]) {
+//       temp = c[j];
+//       c[j] = c[j + 1];
+//       c[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(c)
+
+//#64
+// var a = [1,14,15,7,9];
+// var b = [4,8,11,5,10];
+// var c = [2,13,3,6,12];
+// var d = [];
+// var k = 0;
+// var temp = 0;
+// for (var i = 0; i < 5; i++) {
+//   d[k++] = a[i];
+//   d[k++] = b[i];
+//   d[k++] = c[i];
+// }
+// console.log(d)
+//
+// for(var i = 0; i < d.length; i++) {
+//   for(var j = 0; j < d.length; j++){
+//     if (d[j] < d[j + 1]) {
+//       temp = d[j];
+//       d[j] = d[j + 1];
+//       d[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(d)
+
+//#65
+// var arr = [1,5,2,4,6,8];
+// for (var i = 0; i < arr.length; i++) {
+//   arr[i] += arr[i];
+// }
+// console.log(arr)
+
+//#66
+// var arr = [2,5,4,4,10,16];
+// var f = 0;
+// var znak = true;
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0 && znak === true) {
+//     f = arr[i];
+//     znak = false;
+//   }
+//   if (arr[i] % 2 === 0) {
+//     arr[i] += f;
+//   }
+// }
+// console.log(arr)
+
+//#67
+// var arr = [2,5,4,4,11,16];
+// var f = 0;
+// var znak = true;
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 1) {
+//     f = arr[i];
+//   }
+// }
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 1) {
+//     arr[i] += f;
+//   }
+// }
+// console.log(arr)
+
+//#68
+// var arr = [4,5,1,4,11,16];
+// var max = arr[0];
+// var min = arr[0];
+// var nomerMin = 0, nomerMax = 0;
+//
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//     nomerMax = i;
+//   }
+// }
+// console.log(max,nomerMax + 1)
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//       nomerMin = i;
+//     }
+// }
+// console.log(min,nomerMin + 1)
+// arr[nomerMax] = min;
+// arr[nomerMin] = max;
+// console.log(arr)
+
+//#69
+// var arr = [4,5,67,7,1,2,4,3];
+// var temp = 0;
+// for (var i = 0; i < arr.length; i += 2) {
+//   temp = arr[i];
+//   arr[i] = arr[i + 1];
+//   arr[i + 1] = temp;
+// }
+// console.log(arr)
+
+//#70
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var temp = 0;
+//   for (var i = 0; i < n / 2;i++) {
+//     temp = arr[i + n / 2];
+//     arr[i + n / 2] = arr[i];
+//     arr[i] = temp;
+//   }
+//   console.log(arr)
+// }
+
+//#71
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var j = 0;
+//   var arr2 = [];
+//   for (var i = arr.length - 1; i >= 0; i--) {
+//     arr2[j++] = arr[i];
+//   }
+//   console.log(arr2)
+// }
+
+//#72
