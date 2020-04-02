@@ -1649,7 +1649,81 @@
 // console.log(arr)
 // }
 
-//#83 - 86!!!
+//81
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var k = process.argv[3];
+// k = parseInt(k);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   for (var i = arr.length - 1; i > 0; i--) {
+//     arr[i] = arr[i - k];
+//   }
+//   for (var j = 0; j < k; j++) {
+//     arr[j] = 0;
+//   }
+// console.log(arr)
+// }
+
+//#82
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var k = process.argv[3];
+// k = parseInt(k);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var s = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i + k];
+//   }
+//   for (var j = arr.length - 1; j >= arr.length - k; j--) {
+//     arr[j] = 0;
+//   }
+// console.log(arr)
+// }
+
+//#83
 // const readline = require('readline');
 //
 // const rl = readline.createInterface({
@@ -1679,6 +1753,121 @@
 //     arr[i] = arr[i - 1];
 //   }
 //   arr[0] = temp;
+// console.log(arr)
+// }
+
+//#84
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var temp = 0;
+//   temp = arr[0];
+//   for (var i = 0; i < arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];
+//   }
+//   arr[arr.length - 1] = temp;
+// console.log(arr)
+// }
+
+//#85
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var k = process.argv[3];
+// k = parseInt(k);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var arr2 = [];
+//   for (var j = arr.length - 1; j > arr.length - 1 - k; j--) {
+//     arr2.push(arr[j])
+//   }
+//   for (var i = arr.length - 1; i >= 0; i--) {
+//     arr[i] = arr[i - k];
+//   }
+//   for (i = 0; i < k; i++) {
+//     arr[i] = arr2[i]
+//   }
+// console.log(arr)
+// }
+
+//#86
+// const readline = require('readline');
+//
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+// var arr = [];
+// var n = process.argv[2];
+// n = parseInt(n);
+//
+// var k = process.argv[3];
+// k = parseInt(k);
+//
+// let count = 0;
+//
+// rl.on('line', line => {
+//   line = parseInt(line)
+//   arr.push(line);
+//   count++;
+//   if (count === n) {
+//     array1();
+//     rl.close();
+//   }
+// })
+//
+// function array1(){
+//   var arr2 = [];
+//   var s = 0;
+//   for (var j = 0; j < k; j++) {
+//     arr2.push(arr[j])
+//   }
+//   for (var i = 0; i <= arr.length - 1; i++) {
+//     arr[i] = arr[i + k];
+//   }
+//   for (i = k - 1; i < arr.length; i++) {
+//     arr[i] = arr2[s++];
+//   }
+// // console.log(arr2)
 // console.log(arr)
 // }
 
@@ -1976,5 +2165,3 @@
 //   }
 // console.log(arr,arr.length)
 // }
-
-//#98!!!!
