@@ -64,12 +64,10 @@
 // })
 //
 // function array1(){
-//   var s = 0;
-//   for (var i = 0; i < arr.length - 1; i++) {
-//     for(var j = i + 1; j < arr.length - 1; j++) {
-//       if (arr[i] === arr[j]) {
-//         s++;
-//       }
+//   var s = 1;
+//   for (var i = 0; i < arr.length - 2; i++) {
+//     if (arr[i] === arr[i + 1]) {
+//       s++;
 //     }
 //   }
 //   console.log(s)
