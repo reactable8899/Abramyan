@@ -2133,38 +2133,38 @@
 // }
 
 //#97 do with filter
-// const readline = require('readline');
-//
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
-// var arr = [];
-// var n = process.argv[2];
-// n = parseInt(n);
-//
-// let count = 0;
-//
-// rl.on('line', line => {
-//   line = parseInt(line)
-//   arr.push(line);
-//   count++;
-//   if (count === n) {
-//     array1();
-//     rl.close();
-//   }
-// })
-//
-// function array1(){
-//   for (var i = 0; i < arr.length; i++) {
-//     for (var j = i + 1; j < arr.length; j++) {
-//       if (arr[i] === arr[j]) {
-//         delete arr[i];
-//       }
-//     }
-//   }
-// console.log(arr,arr.length)
-// }
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+var arr = [];
+var n = process.argv[2];
+n = parseInt(n);
+
+let count = 0;
+
+rl.on('line', line => {
+  line = parseInt(line)
+  arr.push(line);
+  count++;
+  if (count === n) {
+    array1();
+    rl.close();
+  }
+})
+
+function array1(){
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        delete arr[i];
+      }
+    }
+  }
+console.log(arr,arr.length)
+}
 
 //#100
 // const readline = require('readline');
