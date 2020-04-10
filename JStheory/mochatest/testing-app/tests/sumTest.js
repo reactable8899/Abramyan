@@ -18,6 +18,6 @@ describe('Тестирование метода', function() {
     it('Сумма 10 и -10 равна нулю', function() {
       const c = sum(10, -10);
 
-      expect(c).to.equal(5);
+      expect(c).to.equal(0);
     })
 });

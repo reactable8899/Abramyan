@@ -25,3 +25,11 @@
 //   }
 // }
 // var counter1 = counter();
+
+var arr = [1,2,3,1,5,4,7,1,2,587,6];
+for (var i = 2; i < arr.length; i += 2) {
+  console.log(arr[i])
+}
+for (var i = 1; i < arr.length - 1; i += 2) {
+  console.log(arr[i])
+}
