@@ -1,0 +1,23 @@
+{
+  "name": "abramyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactable8899/Abramyan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reactable8899/Abramyan/issues"
+  },
+  "homepage": "https://github.com/reactable8899/Abramyan#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mocha": "^7.1.1"
+  }
+}
