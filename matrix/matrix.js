@@ -885,3 +885,124 @@
 //   kol = 0;
 // }
 // console.log(sum)
+
+//#37
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[1,2,1],[2,1,1],[3,3,3]];
+// var sum = 0;
+// var kol = 0;
+//
+// console.log(arr)
+//
+// for (var i = 0; i < m - 1; i++) {
+//   for (var j = 0; j < n; j++) {
+//     if (arr[j][i] === arr[j][m - 1]) {
+//       kol++;
+//     }
+//   }
+//   if (kol % n === 0) {
+//     sum += kol / n;
+//   }
+//   kol = 0;
+// }
+// console.log(sum)
+
+//#38
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[3,2,1,5,6],[2,1,3,4,5],[5,1,3,3,3]];
+// var sum = 0;
+// var kol = 0;
+//
+// console.log(arr)
+//
+// for (var i = 0; i < m; i++) {
+//   for (var j = 0; j < n; j++) {
+//     if (arr[i][j] != arr[i][j + 1]) {
+//       kol++;
+//       //console.log(kol)
+//     }
+//   }
+//   if (kol % n === 0) {
+//     sum += kol / n;
+//   }
+//   kol = 0;
+// }
+// console.log(sum)
+
+//#40
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[2,2,2,5,6],[2,2,5,2,2],[1,1,3,1,3]];
+// var sum = 0;
+// var kol = 0;
+// var max = 0;
+// var nomer = 0;
+// var temp = 0;
+//
+// for (var i = 0; i < arr.length; i++) {
+//   arr[i].sort(function(a, b) {
+//     return a - b;
+//   });
+//   console.log(arr[i])
+// }
+//
+// for (var i = 0; i < m; i++) {
+//   for (var j = 0; j < n; j++) {
+//     if (arr[i][j] === arr[i][j + 1]) {
+//       kol++;
+//       //console.log(kol)
+//     }
+//   }
+//   if (kol > max) {
+//     max = kol;
+//     nomer = i;
+//   }
+//   kol = 0;
+// }
+// console.log(nomer)
+
+//#42
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[2,1,3,5,6],[2,1,5,3,4],[6,5,2,1,3]];
+// var sum = 0;
+// var kol = 0;
+//
+// for (var i = 0; i < arr.length; i++) {
+//   arr[i].sort(function(a, b) {
+//     return a - b;
+//   });
+//   console.log(arr[i])
+// }
+//
+// for (var i = 0; i < m; i++) {
+//   for (var j = 0; j < n; j++) {
+//     if (arr[i][j] < arr[i][j + 1]) {
+//       kol++;
+//       //console.log(kol)
+//     }
+//   }
+//   if (kol === n) {
+//     sum++;
+//   }
+//   kol = 0;
+// }
+// console.log(sum)
