@@ -1673,3 +1673,87 @@
 //     }
 //   }
 //   console.log(arr)
+
+//#72
+// var arr = [[-5,7,-3,3,7],[7,1,3,-5,8],[-2,7,6,4,1],[-1,7,6,2,2],[6,2,6,1,4]];
+// var min = arr[0][0];
+// var nomer = 0;
+// var temp = [];
+// var pemp = [];
+// var s = 0;
+// var sign = true;
+//
+//   for (var i = 0; i < arr.length; i++) {
+//     for (var j = 0; j < arr.length; j++) {
+//       if (arr[j][i] > 0) {
+//         s++;
+//       }
+//     }
+//     if (s === 5 && sign === true) {
+//       nomer = i;
+//       sign = false;
+//     }
+//     s = 0;
+//   }
+//    console.log(arr,nomer)
+//
+//   for (var i = 0; i < arr.length; i++) {
+//     arr[i].push(1)
+//   }
+//   console.log(arr)
+//     for (var i = arr.length - 1; i >= nomer; i--) {
+//       for (var j = 0; j < arr.length; j++) {
+//         pemp[i] = arr[j][i];
+//         arr[j][i] = arr[j][i + 1];
+//         arr[j][i + 1] = pemp[i];
+//       }
+//     }
+//     console.log(arr)
+
+//#76 - 80!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < arr.length - 1; i++) {
+//   if (arr[i][0] > arr[i + 1][0]) {
+//     for (var j = 0; j < arr.length - 1; j++) {
+//       for (var k = 0; k < arr.length; k++) {
+//         temp[k] = arr[j][k];
+//         arr[j][k] = arr[j + 1][k];
+//         arr[j + 1][k] = temp[j];
+//       }
+//     }
+//   }
+// }
+// console.log(arr)
+
+//#80
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s += arr[i][i];
+// }
+// console.log(s)
+
+//#81
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var j = arr.length - 1;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s += arr[i][j--]
+// }
+// console.log(s)
+
+//#82
+var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+var s = 0;
+console.log(arr)
+for (var j = 0; j < arr.length - 1; j++) {
+  for (var i = 0; i < arr.length - 1; i++) {
+    s += arr[i][i + j + 1]
+  }
+  console.log(s)
+  s = 0;
+}
