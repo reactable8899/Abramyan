@@ -982,7 +982,7 @@
 // var n = process.argv[3];
 // n = parseInt(n);
 //
-// var arr = [[2,1,3,5,6],[2,1,5,3,4],[6,5,2,1,3]];
+// var arr = [[1,1,3,5,6],[2,1,5,3,4],[6,5,2,1,3]];
 // var sum = 0;
 // var kol = 0;
 //
@@ -997,7 +997,7 @@
 //   for (var j = 0; j < n; j++) {
 //     if (arr[i][j] < arr[i][j + 1]) {
 //       kol++;
-//       //console.log(kol)
+//       console.log(kol)
 //     }
 //   }
 //   if (kol === n) {
@@ -1006,3 +1006,499 @@
 //   kol = 0;
 // }
 // console.log(sum)
+
+//43
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[1,1,3,5,2],[-2,-1,5,3,4],[-6,-5,2,1,3]];
+// var sum = 0;
+// var kol = 0;
+// console.log(arr)
+// for (var i = 0; i < m; i++) {
+//   for (var j = 0; j < n - 1; j++) {
+//     if (arr[j][i] > arr[j + 1][i]) {
+//       kol++;
+//     }
+//   }
+//   if (kol === n - 1) {
+//     sum++;
+//   }
+//   kol = 0;
+// }
+// console.log(sum)
+
+//#44
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[1,1,3,4,5],[-2,-1,1,3,4],[-6,-5,0,1,3]];
+// var sum = 0;
+// var kol = 0;
+// var min = 0;
+//
+// console.log(arr)
+//
+// for (var i = 0; i < m; i++) {
+//   min = arr[i][0];
+//   for (var j = 0; j < n; j++) {
+//     if (min > arr[i][j]) {
+//       min = arr[i][j];
+//     }
+//   }
+//   console.log(min)
+// }
+
+//#46!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [[1,6,3,4,5],[-2,7,1,3,4],[-6,8,0,1,3]];
+// var min = 0;
+// var element = 0;
+//
+// console.log(arr)
+//
+// for (var i = 0; i < n; i++) {
+//   max = arr[i][0];
+//   min = arr[0][i];
+//
+//   for (var j = 0; j < m; j++) {
+//     if (max < arr[i][j]) {
+//       max = arr[i][j];
+//     }
+//   }
+//
+//   //console.log(max)
+//
+//   for (var k = 0; k < n; k++) {
+//     if (min > arr[k][i]) {
+//       min = arr[k][i];
+//     }
+//   }
+//   // console.log(min)
+//
+//   if (max === min) {
+//     element = max;
+//   }
+//   console.log(element)
+// }
+
+//#47
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var k1 = process.argv[4];
+// k1 = parseInt(k1);
+//
+// var k2 = process.argv[5];
+// k2 = parseInt(k2);
+//
+// var arr = [];
+// var mm = [1,2,3,4,5];
+// var sum = 0;
+// var temp = [];
+//
+// for (var i = 0; i < m; i++) {
+//   arr[i] = [];
+//   arr[i][0] = mm[i]
+//   for (var j = 1; j < n; j++) {
+//     arr[i][j] = arr[i][j - 1] + 2;
+//   }
+// }
+// console.log(arr)
+// for (var j = 0; j < m; j++) {
+//   temp[j] = arr[k1][j];
+//   arr[k1][j] = arr[k2][j];
+//   arr[k2][j] = temp[j]
+// }
+// console.log(arr)
+
+//#48
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var k1 = process.argv[4];
+// k1 = parseInt(k1);
+//
+// var k2 = process.argv[5];
+// k2 = parseInt(k2);
+//
+// var arr = [];
+// var mm = [1,2,3,4,5];
+// var sum = 0;
+// var temp = [];
+//
+// for (var i = 0; i < m; i++) {
+//   arr[i] = [];
+//   arr[i][0] = mm[i]
+//   for (var j = 1; j < n; j++) {
+//     arr[i][j] = arr[i][j - 1] + 2;
+//   }
+// }
+// console.log(arr)
+// for (var j = 0; j < m; j++) {
+//   temp[j] = arr[j][k1];
+//   arr[j][k1] = arr[j][k2];
+//   arr[j][k2] = temp[j]
+// }
+// console.log(arr)
+
+//#49
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [];
+// var mm = [1,2,3,4,5];
+// var temp = [];
+// var min = 0;
+// var max = 0;
+//
+// for (var i = 0; i < m; i++) {
+//   arr[i] = [];
+//   arr[i][0] = mm[i]
+//   for (var j = 1; j < n; j++) {
+//     arr[i][j] = arr[i][j - 1] + 2;
+//   }
+// }
+// console.log(arr)
+// for (var i = 0; i < n; i++) {
+//   var nomerMin1 = i;
+//   var nomerMin2 = 0;
+//   var nomerMax1 = i;
+//   var nomerMax2 = 0;
+//   min = arr[i][0];
+//   max = arr[i][0];
+//   for (var j = 0; j < m; j++) {
+//     if (arr[i][j] < min) {
+//       min = arr[i][j];
+//       nomerMin1 = i;
+//       nomerMin2 = j;
+//       //  console.log(arr[nomerMin1][nomerMin2])
+//     }
+//     for (var k = 0; k < m; k++) {
+//       if (arr[i][k] > max) {
+//         max = arr[i][k];
+//         nomerMax1 = i;
+//         nomerMax2 = k;
+//       //  console.log(arr[nomerMax1][nomerMax2])
+//       }
+//     }
+//   }
+//   temp = arr[nomerMin1][nomerMin2];
+//   arr[nomerMin1][nomerMin2] = arr[nomerMax1][nomerMax2];
+//   arr[nomerMax1][nomerMax2] = temp;
+//   console.log(min,max)
+// }
+// console.log(arr)
+
+//#50
+// var m = process.argv[2];
+// m = parseInt(m);
+//
+// var n = process.argv[3];
+// n = parseInt(n);
+//
+// var arr = [];
+// var mm = [1,2,3,4,5];
+// var temp = [];
+// var min = 0;
+// var max = 0;
+//
+// for (var i = 0; i < m; i++) {
+//   arr[i] = [];
+//   arr[i][0] = mm[i]
+//   for (var j = 1; j < n; j++) {
+//     arr[i][j] = arr[i][j - 1] + 2;
+//   }
+// }
+// console.log(arr)
+// for (var i = 0; i < n; i++) {
+//   var nomerMin1 = 0;
+//   var nomerMin2 = i;
+//   var nomerMax1 = 0;
+//   var nomerMax2 = i;
+//   min = arr[0][i];
+//   max = arr[0][i];
+//   for (var j = 0; j < m; j++) {
+//     if (arr[j][i] < min) {
+//       min = arr[j][i];
+//       nomerMin1 = j;
+//       nomerMin2 = i;
+//       //  console.log(arr[nomerMin1][nomerMin2])
+//     }
+//     for (var k = 0; k < m; k++) {
+//       if (arr[k][i] > max) {
+//         max = arr[k][i];
+//         nomerMax1 = k;
+//         nomerMax2 = i;
+//       //  console.log(arr[nomerMax1][nomerMax2])
+//       }
+//     }
+//   }
+//   temp = arr[nomerMin1][nomerMin2];
+//   arr[nomerMin1][nomerMin2] = arr[nomerMax1][nomerMax2];
+//   arr[nomerMax1][nomerMax2] = temp;
+//   console.log(min,max)
+// }
+// console.log(arr)
+
+//#51
+
+// var arr = [[5,7,3,8,3],[5,23,6,87,3],[2,5,7,2,56],[1,5,7,2,6],[6,2,4,32,6]]
+// var min = arr[0][0];
+// var max = arr[0][0];
+// var nomerMin1 = 0;
+// var nomerMax1 = 0;
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < 5; i++) {
+//   for(var j = 0; j < 5; j++) {
+//     if (min > arr[i][j]) {
+//       min = arr[i][j];
+//       nomerMin1 = i;
+//     }
+//     if (max < arr[i][j]) {
+//       max = arr[i][j];
+//       nomerMax1 = i;
+//     }
+//   }
+// }
+// for (var k = 0; k < 5; k++) {
+//   temp[k] = arr[nomerMin1][k];
+//   arr[nomerMin1][k] = arr[nomerMax1][k];
+//   arr[nomerMax1][k] = temp[k]
+// }
+// console.log(min,max)
+// console.log(nomerMin1,nomerMax1)
+// console.log(arr)
+
+//#52
+// var arr = [[5,7,3,8,3],[5,23,6,87,3],[2,5,7,2,56],[1,5,7,2,6],[6,2,4,32,6]]
+// var min = arr[0][0];
+// var max = arr[0][0];
+// var nomerMin1 = 0;
+// var nomerMax1 = 0;
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < 5; i++) {
+//   for(var j = 0; j < 5; j++) {
+//     if (min > arr[j][i]) {
+//       min = arr[j][i];
+//       nomerMin1 = i;
+//     }
+//     if (max < arr[j][i]) {
+//       max = arr[j][i];
+//       nomerMax1 = i;
+//     }
+//   }
+// }
+// for (var k = 0; k < 5; k++) {
+//   temp[k] = arr[k][nomerMin1];
+//   arr[k][nomerMin1] = arr[k][nomerMax1];
+//   arr[k][nomerMax1] = temp[k]
+// }
+// console.log(min,max)
+// console.log(nomerMin1,nomerMax1)
+// console.log(arr)
+
+//#53
+// var arr = [[5,7,3,8,3],[-5,-23,6,87,3],[-2,5,-7,2,56],[-1,5,7,-2,6],[6,2,4,32,-6]]
+// var s = 0;
+// var j = 0;
+// var temp = [];
+// var nomer = 0;
+// for (var i = 0; i < 5; i++) {
+//   for (var j = 0; j < 5 ; j++) {
+//     if (arr[j][i] > 0) {
+//       s++;
+//     }
+//     if (s === 5) {
+//       nomer = i;
+//     }
+//   }
+//   s = 0;
+// }
+// console.log(nomer)
+// console.log(arr)
+// for (var k = 0; k < 5; k++) {
+//   temp[k] = arr[k][0];
+//   arr[k][0] = arr[k][nomer];
+//   arr[k][nomer] = temp[k];
+// }
+// console.log(arr)
+
+//#54
+// var arr = [[-5,7,-3,8,3],[-5,-23,-6,87,3],[-2,5,-7,2,56],[-1,5,-7,-2,6],[6,2,-4,32,-6]]
+// var s = 0;
+// var j = 0;
+// var temp = [];
+// var nomer = 0;
+// for (var i = 0; i < 5; i++) {
+//   for (var j = 0; j < 5 ; j++) {
+//     if (arr[j][i] < 0) {
+//       s++;
+//     }
+//     if (s === 5) {
+//       nomer = i;
+//     }
+//   }
+//   s = 0;
+// }
+// console.log(nomer)
+// console.log(arr)
+// for (var k = 0; k < 5; k++) {
+//   temp[k] = arr[k][4];
+//   arr[k][4] = arr[k][nomer];
+//   arr[k][nomer] = temp[k];
+// }
+// console.log(arr)
+//#55
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6; j++) {
+//     temp[i] = arr[6 - 1 - i][j];
+//     arr[6 - 1 - i][j] = arr[i][j];
+//     arr[i][j] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// console.log(arr)
+// var temp = [];
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6; j++) {
+//     temp[i] = arr[3 + i][j];
+//     arr[3 + i][j] = arr[i][j];
+//     arr[i][j] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+//#56
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// console.log(arr)
+// var temp = [];
+// for (var i = 0; i < 6; i++) {
+//   for (var j = 0; j < 6 / 2; j++) {
+//     temp[j] = arr[i][3 + j];
+//     arr[i][3 + j] = arr[i][j];
+//     arr[i][j] = temp[j]
+//   }
+// }
+// console.log(arr)
+
+//#57
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// console.log(arr)
+// var temp = [];
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6 / 2; j++) {
+//     temp[i] = arr[3 + i][3 + j];
+//     arr[3 + i][3 + j] = arr[i][j];
+//     arr[i][j] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+//#58
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// console.log(arr)
+// var temp = [];
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6 / 2; j++) {
+//     temp[i] = arr[i][j + 3];
+//     arr[i][j + 3] = arr[i + 3][j];
+//     arr[i + 3][j] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+//#59
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6; j++) {
+//     temp[i] = arr[6 - 1 - i][j];
+//     arr[6 - 1 - i][j] = arr[i][j];
+//     arr[i][j] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+//#60
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < 6 / 2; i++) {
+//   for (var j = 0; j < 6; j++) {
+//     temp[i] = arr[j][6 - 1 - i];
+//     arr[j][6 - 1 - i] = arr[j][i];
+//     arr[j][i] = temp[i]
+//   }
+// }
+// console.log(arr)
+
+//#61
+// var k = process.argv[2];
+// k = parseInt(k);
+//
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+//
+// for (var i = 0; i < arr.length; i++) {
+//   for (var j = k; j < arr.length - 1; j++) {
+//     arr[j][i] = arr[j + 1][i];
+//   }
+// }
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   arr[arr.length - 1][i] = temp[i]
+// }
+// console.log(arr)
+
+// var k = process.argv[2];
+// k = parseInt(k);
+//
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   arr[k][i] = temp[i]
+// }
+// console.log(arr)
+
+//#62
+// var k = process.argv[2];
+// k = parseInt(k);
+//
+// var arr = [[-5,7,-3,8,3,5],[-5,-2,-6,8,3,5],[-2,5,-7,2,6,4],[-1,5,-7,-2,6,2],[6,2,-4,2,-6,1],[2,5,7,1,2,7]];
+// var temp = [];
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   arr[i][k] = temp[i]
+// }
+// console.log(arr)
