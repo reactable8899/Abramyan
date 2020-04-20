@@ -1747,13 +1747,260 @@
 // console.log(s)
 
 //#82
-var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
-var s = 0;
-console.log(arr)
-for (var j = 0; j < arr.length - 1; j++) {
-  for (var i = 0; i < arr.length - 1; i++) {
-    s += arr[i][i + j + 1]
-  }
-  console.log(s)
-  s = 0;
-}
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var sum = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     sum += arr[j][s]
+//   //  console.log(arr[s][j])
+//     s++;
+//   }
+//   console.log(sum)
+//   sum = 0;
+// }
+
+//#83
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var sum = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     sum += arr[j][s]
+//     console.log(arr[j][s])
+//     s++;
+//   }
+//   console.log(sum)
+//   sum = 0;
+// }
+
+//#84
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var sum = 0;
+// var sr = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     sum += arr[s][j]
+//   //  console.log(arr[s][j])
+//     s++;
+//   }
+//   sr = sum / (arr.length - i);
+//   console.log(sum,sr)
+//   sum = 0;
+// }
+
+//#85
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var sum = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     sum += arr[j][s]
+//     //console.log(arr[j][s])
+//     s++;
+//   }
+//   sr = sum / (arr.length - i);
+//   console.log(sum,sr)
+//   sum = 0;
+// }
+
+//#86
+// var arr = [[8,7,-3,3,7],[7,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,6,1,4]];
+// var s = 0;
+// var min = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   min = arr[0][i];
+//   for (var j = i; j < arr.length; j++) {
+//     if (arr[s][j] < min) {
+//       min = arr[s][j]
+//     }
+//     s++;
+//   }
+//   console.log(min)
+// }
+
+//#87
+// var arr = [[8,7,-3,9,7],[10,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// var max = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   max = arr[i][0];
+//   for (var j = i; j < arr.length; j++) {
+//     if (arr[j][s] > max) {
+//       max = arr[j][s]
+//     }
+//     s++;
+//   }
+//   console.log(max)
+// }
+
+//#88
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#89
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = arr.length - 2; i >= 0; i--) {
+//   s = 0;
+//   for (var j = i; j >= 0; j--) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#90
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s = arr.length - 1;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s--;
+//   }
+// }
+// console.log(arr)
+
+//#91
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[s][j] = 0;
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#92
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[s][j] = 0;
+//     s++;
+//   }
+// }
+// for (var i = arr.length - 2; i >= 0; i--) {
+//   s = 0;
+//   for (var j = i; j >= 0; j--) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#93
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// var t = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = arr.length - 1;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s--;
+//   }
+//   for (var k = i; k < arr.length; k++) {
+//     arr[t][k] = 0;
+//     t++;
+//   }
+//   t = 0;
+// }
+// console.log(arr)
+
+//#94
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+// }
+// for (var i = arr.length - 1; i >= 0; i--) {
+//   s = 0;
+//   for (var j = i; j >= 0; j--) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#95
+// var arr = [[8,7,-3,9,7],[1,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s++;
+//   }
+//   s = arr.length - 1;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = 0;
+//     s--;
+//   }
+// }
+// console.log(arr)
+
+//#96
+// var arr = [[8,7,-3,9,7],[10,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// var temp = 0;
+// console.log(arr)
+// for (var i = 1; i < arr.length; i++) {
+//   s = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     arr[j][s] = arr[s][j];
+//     s++;
+//   }
+// }
+// console.log(arr)
+
+//#97
+// var arr = [[8,7,-3,9,7],[10,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
+// var s = 0;
+// var temp = 0;
+// console.log(arr)
+// for (var i = 0; i < arr.length - 1; i++) {
+//   s = 0;
+//   for (var j = i; j >= 0; j--) {
+//     arr[j][s] = 0;
+//     s++;
+//     console.log("!#!!@#")
+//   }
+// }
+// console.log(arr)
