@@ -64,34 +64,3 @@ const slider = function () {
     initSlider: initSlider
   }
 }();
-
-1/n + 2/n^2 + 3/n^3
-
-
-function power(n, k) {
-  let p = 1;
-  for(let i = 0; i < k; i++) {
-    p *= n;
-
-    // p = n;
-    // p = n^2
-    // p = n^3
-  }
-  return p;
-}
-
-
-function calA(n) {
-  sum = 0;
-  for (let i = 1; i < n; i++) {
-    sum += i / power(n, i);
-    // 1 / power(n, 1)
-    // 2 / power(n, 2);
-    // ...
-  }
-  return sum;
-}
-
-function calcB() {
-  return power(2, 3);
-}
