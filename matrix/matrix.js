@@ -1989,18 +1989,3 @@
 //   }
 // }
 // console.log(arr)
-
-//#97
-// var arr = [[8,7,-3,9,7],[10,1,3,-5,8],[3,7,6,4,1],[2,7,6,2,2],[6,2,9,1,4]];
-// var s = 0;
-// var temp = 0;
-// console.log(arr)
-// for (var i = 0; i < arr.length - 1; i++) {
-//   s = 0;
-//   for (var j = i; j >= 0; j--) {
-//     arr[j][s] = 0;
-//     s++;
-//     console.log("!#!!@#")
-//   }
-// }
-// console.log(arr)
