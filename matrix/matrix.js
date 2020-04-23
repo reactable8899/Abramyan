@@ -265,8 +265,11 @@
 //   }
 // }
 // for (i = 0; i < m; i++) {
+
 //   for (var j = 1; j < n; j += 2) {
+
 //   console.log(arr[j][i])
+
 //   }
 // }
 //
@@ -505,11 +508,12 @@
 // }
 // console.log(arr)
 // for (i = 0; i < n; i++) {
+//  sum = 0;
 //   for (j = 0; j < n; j ++) {
 //     sum += arr[i][j];
 //   }
 //   console.log("summa " + (i + 1) + " stroki = " + sum)
-//   sum = 0;
+//
 // }
 
 //#20
@@ -539,11 +543,12 @@
 // }
 // console.log(arr)
 // for (i = 0; i < n; i++) {
+//  sum = 1;
 //   for (j = 0; j < n; j ++) {
 //     sum *= arr[j][i];
 //   }
 //   console.log("summa " + (i + 1) + " stroki = " + sum)
-//   sum = 1;
+//
 // }
 
 //#21
